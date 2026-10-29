@@ -1,0 +1,30 @@
+NBFC SCALE-BASED REGULATION — DEV FIXTURE (simplified, not an official text)
+
+1. The four layers
+NBFCs are sorted into four regulatory layers based mainly on their size
+and the kind of risk they carry:
+- Base Layer (NBFC-BL): smaller, non-deposit-taking NBFCs below a set
+  asset threshold, with lighter-touch regulation.
+- Middle Layer (NBFC-ML): all deposit-taking NBFCs, plus non-deposit
+  NBFCs above the Base Layer asset threshold.
+- Upper Layer (NBFC-UL): the top NBFCs identified by RBI using a
+  scoring methodology (size, interconnectedness, complexity); these
+  face bank-like regulatory requirements.
+- Top Layer (NBFC-TL): currently empty in practice, reserved for NBFCs
+  that RBI believes pose an unacceptably high systemic risk even after
+  Upper Layer treatment.
+
+2. Why the tiering exists
+The idea is proportionate regulation: a small NBFC lending in one city
+shouldn't face the same compliance burden as a large, systemically
+important one — but the largest NBFCs should face rules close to what
+banks face, since their failure could affect the wider financial system.
+
+3. Capital and governance
+As an NBFC moves up a layer, requirements get stricter: higher capital
+adequacy expectations, more board-level committees, tighter large
+exposure limits, and closer supervisory reporting.
+
+4. Annual review
+RBI reviews which NBFCs sit in the Upper Layer every year, and an NBFC
+can move between layers if its size or risk profile changes materially.

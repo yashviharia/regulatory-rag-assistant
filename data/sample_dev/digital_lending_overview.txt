@@ -1,0 +1,38 @@
+DIGITAL LENDING — DEV FIXTURE (simplified, not an official text)
+
+1. Scope
+This note applies to banks, co-operative banks, NBFCs (including housing
+finance companies), and all-India financial institutions that lend money
+through a digital app or website, whether they run the app themselves or
+use an outside Lending Service Provider (LSP).
+
+2. Lender-LSP relationship
+Any lender working with an LSP needs a written contract spelling out who
+is responsible for what. The lender stays fully on the hook for anything
+the LSP does or fails to do on its behalf — the arrangement does not
+shift legal responsibility away from the regulated lender.
+
+3. Borrower protections
+- The borrower's age, job, and income must be checked before any loan is
+  approved; credit limits cannot increase automatically without consent.
+- A short, plain-language summary of the loan's key terms (the "Key
+  Facts Statement") must be given before the borrower signs.
+- Loan money must go straight to the borrower's own bank account, and
+  repayments must go straight back to the lender's account — the LSP app
+  is not allowed to sit in the middle of the money flow.
+- Borrowers get a minimum cooling-off window after taking the loan,
+  during which they can back out without a penalty.
+
+4. Data and privacy
+- Apps may only collect data they actually need for the loan decision,
+  and only with the borrower's clear consent.
+- Apps are not allowed to read a borrower's phone contacts, files, or
+  call logs.
+- All borrower data has to be stored on servers located in India.
+
+5. Guarantee arrangements (DLG)
+When an LSP offers to cover some of a lender's losses on a loan pool
+(a "default loss guarantee"), that cover cannot be larger than 5% of
+the amount disbursed in that pool, and it can only be given as cash,
+a fixed deposit, or a bank guarantee — not as some other informal
+promise.

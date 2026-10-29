@@ -1,0 +1,156 @@
+[
+  {
+    "strategy": "section",
+    "mode": "hybrid",
+    "judge": "openai/gpt-oss-20b",
+    "n_answerable": 28,
+    "n_fully_scored": 17,
+    "means": {
+      "faithfulness": 0.9069327731092437,
+      "llm_context_precision_with_reference": 0.8284313724730392,
+      "context_recall": 0.9411764705882353
+    },
+    "details": [
+      {
+        "question": "How often does a bank have to refresh the KYC of a customer it rates as high risk?",
+        "answer": "A bank must update (refresh) the KYC of a **high‑risk** customer **at least once every 2 years** from the date the account was opened or the last KYC update 【Excerpt 1 — kyc_directions_commercial_banks_2025.pdf, Chapter VI – Customer Due Diligence, paragraph 42】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What is the KYC re-verification interval for medium-risk customers?",
+        "answer": "The regulations require that a bank update (re‑verify) the KYC information of a **medium‑risk customer at least once every 8 years** from the date of account opening or the last KYC update【Excerpt 1 — source: kyc_directions_commercial_banks_2025.pdf, Chapter VI – Customer Due Diligence (CDD) Procedure > 42. Updation / Periodic Updation of KYC, paragraph (1)】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "A low-risk individual's KYC update is overdue. Can the bank stop their transactions?",
+        "answer": "No. For a low‑risk individual whose KYC is past‑due, the Directions require the bank **to continue allowing all transactions** while it arranges for the KYC to be updated. The bank must complete the update within one year of the due date (or by 30 June 2026, whichever is later) and keep the account under regular monitoring, but it may not block the customer’s transactions.  \n\n**Source:** Excerpt 1, paragraph (2) of the “Updation / Periodic Updation of KYC” section.",
+        "faithfulness": 0.5714285714285714,
+        "llm_context_precision_with_reference": 0.7499999999625,
+        "context_recall": 1.0
+      },
+      {
+        "question": "If a customer's only KYC change is a new address, how must the bank confirm it?",
+        "answer": "When the only change to a customer’s KYC is a new address, the bank must:\n\n1. **Obtain a self‑declaration of the new address** from the customer through any of the approved channels – e‑mail ID registered with the bank, the mobile number on record, ATMs, digital channels (online banking, mobile‑app), a letter, etc. 【Excerpt 1 – paragraph (ii)】  \n\n2. **Verify the declared address by “positive confirmation” within two months**.  The verification can be done by any of the methods listed – an address‑verification letter, contact‑point verification, delivery of documents or other comparable means. 【Excerpt 1 – paragraph (ii)】\n\nThus, a self‑declaration is first collected, and then the bank must positively confirm the new address within the stipulated two‑month period.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "Can a business correspondent collect a customer's KYC self-declaration on the bank's behalf?",
+        "answer": "**Yes.**  \n\nThe directions expressly allow a Business Correspondent (BC) to collect a customer’s self‑declaration (and any supporting documents) on behalf of the bank:\n\n* “The bank shall obtain the self‑declaration … **through the BC**, after successful biometric‑based e‑KYC authentication.” — *Excerpt 1, paragraph 42 (Updation / Periodic Updation of KYC)*  \n* “The BC shall authenticate the self‑declaration and supporting documents submitted in person by the customer and promptly forward the same to the concerned bank branch… The BC shall provide the customer an acknowledgment of receipt of such declaration/submission of documents.” — *Excerpt 1, same paragraph*  \n\nThus, a Business Correspondent may collect, authenticate and forward the self‑declaration, though the bank retains ultimate responsibility for periodic KYC updation.",
+        "faithfulness": 0.8571428571428571,
+        "llm_context_precision_with_reference": 0.7499999999625,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What is the maximum balance allowed in a small account?",
+        "answer": "The regulations cap the balance of a “small account” at **₹ 50,000** at any point in time (with the exception that deposits from government grants, welfare benefits or procurement payments are not counted toward this limit)【Excerpt 1 — source: kyc_directions_commercial_banks_2025.pdf, paragraph 28】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "How much money can be credited to a small account in a year?",
+        "answer": "The regulations limit the total amount that can be **credited to a “small account” in a financial year to ₹ 1 lakh**.  \n\n- This ceiling is set out in **paragraph 28** of the “Customer Due Diligence (CDD) Procedure” – the small‑account provisions (Excerpt 1) which states: “the aggregate of all credits in a financial year does not exceed Rupees One Lakh…”.  \n\n(Excerpt 1, paragraph 28)",
+        "faithfulness": 0.8,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What happens if the balance of an account opened with Aadhaar OTP e-KYC goes above the limit?",
+        "answer": "If the total balance in all deposit accounts that were opened using Aadhaar‑OTP e‑KYC exceeds the ₹1 lakh ceiling, the bank must **stop (cease) the operation of the account(s) until it completes the additional Customer‑Due‑Diligence steps required under paragraph 6** of the same provision.  \n\n*Source: kyc_directions_commercial_banks_2025.pdf, Chapter VI – Customer Due Diligence (CDD) Procedure, paragraph 25 (3) – “The aggregate balance of all the deposit accounts of the customer shall not exceed Rupees One Lakh. In case the balance exceeds the threshold, the bank shall cease the account’s operation, until it completes the CDD as mentioned at (6) below.”*",
+        "faithfulness": 0.7142857142857143,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What shareholding makes someone a beneficial owner of a company customer?",
+        "answer": "The excerpts you provided do not contain a definition of the share‑holding percentage that makes a natural person a beneficial owner of a **company** customer.  \n\n- Excerpt 4 defines the beneficial‑owner threshold only for partnership firms (more than 10 percent of capital or profits) and for unincorporated associations, but it does not give a rule for companies.  \n- Excerpts 1, 2 and 3 discuss identification procedures and documentation requirements, but they also do not specify a share‑holding threshold for companies.\n\nTherefore, the specific share‑holding level that creates a beneficial‑owner relationship for a company customer is not stated in the supplied context.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.249999999975,
+        "context_recall": 1.0
+      },
+      {
+        "question": "Who has to sign off before a bank opens an account for a politically exposed person?",
+        "answer": "The bank must obtain **senior‑management approval** before it can open an account for a Politically Exposed Person (PEP)【Excerpt 1 — kyc_directions_commercial_banks_2025.pdf, Chapter VI, paragraph 45, sub‑point (iii)】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "Does the PEP definition cover domestic politicians?",
+        "answer": "No. The definition of a Politically Exposed Person (PEP) in the provided guidance is limited to individuals “entrusted with prominent public functions **by a foreign country**,” such as heads of state, senior politicians, senior government, judicial or military officers, senior executives of state‑owned corporations and important political‑party officials【Excerpt 1 – Chapter VI, paragraph 45(1)】. Because the definition expressly ties the exposure to a foreign country, domestic politicians are not covered by this PEP definition.",
+        "faithfulness": 0.8,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "For how long must a bank keep records of customer transactions?",
+        "answer": "A bank must retain **all necessary records of transactions with a customer (domestic or international) for at least five years from the date of the transaction**【Excerpt 1 — source: kyc_directions_commercial_banks_2025.pdf, Chapter VII – Record Management, paragraph 50】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "How long must identity and address records be kept after a customer closes their relationship with the bank?",
+        "answer": "The bank must retain the identification records — including the customer’s identity and address information — for **at least five years after the business relationship has ended**.  \n\n*Source:* Excerpt 1, Chapter VII – Record Management, paragraph (2) (the provision that “preserve the records pertaining to the identification of the customers and their addresses… for at least five years after the business relationship has ended”).",
+        "faithfulness": 0.875,
+        "llm_context_precision_with_reference": 0.8333333332916666,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What is the deadline for uploading a new customer's KYC records to the Central KYC Records Registry?",
+        "answer": "The bank must upload a new customer’s KYC records to the Central KYC Records Registry **within 10 days of the commencement of the account‑based relationship** with that customer【Excerpt 1 — source: kyc_directions_commercial_banks_2025.pdf, paragraph (2)】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "How frequently should a bank review the risk category assigned to its accounts?",
+        "answer": "The bank must **review the risk categorisation of its accounts at least once every six months**. This requirement is set out in the on‑going due‑diligence provisions, which state that “the bank shall put in place a system of periodic review of risk categorisation of accounts, with such periodicity being at least once in every six months”【Excerpt 2 — source: kyc_directions_commercial_banks_2025.pdf, Chapter VI – Customer Due Diligence (CDD) Procedure > E. On‑going Due Diligence, paragraph 41(1)】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.49999999995,
+        "context_recall": 1.0
+      },
+      {
+        "question": "For an account opened remotely without meeting the customer, what must the first transaction be?",
+        "answer": "The excerpts you provided do not contain any rule or guidance that specifies what the first transaction must be for an account that is opened remotely without meeting the customer in person. None of the cited paragraphs (Excerpt 1 – vi, vii, viii, ix; Excerpt 2 – clauses 1‑11; Excerpt 3 – points 1‑7; Excerpt 4 – definitions of “Small Account” and “Transaction”) address a requirement for a particular type of first transaction in a remotely‑opened account. Therefore, based on the supplied material, I cannot answer the question.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.0,
+        "context_recall": 0.0
+      },
+      {
+        "question": "How recent must an Aadhaar XML file or QR code be when it is used for video KYC?",
+        "answer": "The bank must use an Aadhaar XML file or Aadhaar Secure QR‑Code that was generated **no more than three working days before the video‑based Customer Identification Process (V‑CIP) is carried out**. The guidance also requires that the video‑KYC itself be completed within three working days of downloading or obtaining that XML file/QR‑code 【Excerpt 1, paragraph (viii)】; this same three‑working‑day limit is reiterated in paragraph (ix) of the same excerpt.",
+        "faithfulness": 0.8,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "If a bank downloads KYC records from CKYCR, does it have to re-verify the customer's identity?",
+        "answer": "No. A bank that downloads a customer’s KYC record from the Central KYC Records Registry (CKYCR) is **not required to re‑verify the authenticity of the customer’s identity (or address)**, **provided that the downloaded record is current and complies with the applicable PML Act/Rules**.  \n\n- This is stated in Excerpt 1 (Chapter X – Other Instructions > 65. CDD Procedure …): “any bank downloading and relying on such records from the CKYCR **shall not be required to re‑verify the authenticity of the customer’s identity and/or address**, provided the KYC records downloaded from CKYCR are current and compliant with the PML Act, 2002 / PML Rules, 2005.”【Excerpt 1】.",
+        "faithfulness": null,
+        "llm_context_precision_with_reference": null,
+        "context_recall": null
+      }
+    ],
+    "out_of_corpus_answers": [
+      {
+        "question": "What is the minimum cooling-off period a borrower gets on a digital loan?",
+        "answer": "I’m sorry, but the provided excerpts do not contain any information about a “minimum cooling‑off period” for borrowers on a digital loan. None of the cited documents mention such a requirement."
+      },
+      {
+        "question": "What is the maximum size of a default loss guarantee relative to the loan pool it covers?",
+        "answer": "The excerpts you provided do not contain any information about a “default loss guarantee” or any limit on its size relative to the loan pool it covers. Therefore, I cannot answer that question from the given material."
+      },
+      {
+        "question": "What capital adequacy ratio must a small finance bank maintain?",
+        "answer": "I’m sorry, but the provided excerpts do not contain any information about the capital‑adequacy ratio that a small finance bank must maintain. None of the cited documents mention a required ratio for small finance banks."
+      }
+    ]
+  }
+]

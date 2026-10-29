@@ -1,0 +1,247 @@
+[
+  {
+    "question": "How often does a bank have to refresh the KYC of a customer it rates as high risk?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "at least once in every two years for high- risk customers"
+    ],
+    "reference_answer": "At least once every two years from account opening / last KYC updation (para 42(1))."
+  },
+  {
+    "question": "What is the KYC re-verification interval for medium-risk customers?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "once in every eight years for medium risk customers"
+    ],
+    "reference_answer": "At least once every eight years (para 42(1))."
+  },
+  {
+    "question": "A low-risk individual's KYC update is overdue. Can the bank stop their transactions?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "shall allow all transactions and ensure the updation of KYC within one year of its falling due for KYC or up to June 30, 2026, whichever is later"
+    ],
+    "reference_answer": "No. The bank must allow all transactions and get KYC updated within one year of it falling due or by June 30, 2026, whichever is later, while monitoring the account (para 42(2))."
+  },
+  {
+    "question": "If a customer's only KYC change is a new address, how must the bank confirm it?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "shall verify the declared address through positive confirmation within two months"
+    ],
+    "reference_answer": "Take a self-declaration of the new address through registered email/mobile, ATM, digital channels or letter, and verify it by positive confirmation within two months (para 42(3)(ii))."
+  },
+  {
+    "question": "Can a business correspondent collect a customer's KYC self-declaration on the bank's behalf?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "The bank may obtain a self-declaration from the customer in case of no change in KYC information or change only in the address details through an authorised BC"
+    ],
+    "reference_answer": "Yes, for no-change or address-only updates, via an authorised BC after biometric e-KYC authentication; the bank keeps ultimate responsibility (para 42(3)(iv))."
+  },
+  {
+    "question": "What is the maximum balance allowed in a small account?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "the balance at any point of time does not exceed ₹50,000"
+    ],
+    "reference_answer": "₹50,000 at any point in time, though government grants, welfare benefits and procurement payments don't count toward it (para 28(3))."
+  },
+  {
+    "question": "How much money can be credited to a small account in a year?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "the aggregate of all credits in a financial year does not exceed Rupees One Lakh"
+    ],
+    "reference_answer": "Aggregate credits in a financial year cannot exceed ₹1 lakh (para 28(1))."
+  },
+  {
+    "question": "What happens if the balance of an account opened with Aadhaar OTP e-KYC goes above the limit?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "In case the balance exceeds the threshold, the bank shall cease the account’s operation"
+    ],
+    "reference_answer": "The aggregate balance cap is ₹1 lakh; if exceeded, the bank must stop operations in the account until full CDD is completed (para 25(3))."
+  },
+  {
+    "question": "What shareholding makes someone a beneficial owner of a company customer?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "more than 10 percent of the shares or capital or profits of the company"
+    ],
+    "reference_answer": "Ownership of or entitlement to more than 10 per cent of the company's shares, capital or profits, or control through other means (para 5, definition of Beneficial Owner)."
+  },
+  {
+    "question": "Who has to sign off before a bank opens an account for a politically exposed person?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "obtain approval to open an account for a PEP from the senior management"
+    ],
+    "reference_answer": "Senior management approval is required, plus source-of-funds checks and enhanced ongoing monitoring (para 45(1))."
+  },
+  {
+    "question": "Does the PEP definition cover domestic politicians?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "entrusted with prominent public functions by a foreign country"
+    ],
+    "reference_answer": "No. PEPs are individuals entrusted with prominent public functions by a foreign country, e.g. heads of state, senior politicians and officials (para 45, Explanation)."
+  },
+  {
+    "question": "For how long must a bank keep records of customer transactions?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "for at least five years from the date of transaction"
+    ],
+    "reference_answer": "At least five years from the date of the transaction (para 50(1))."
+  },
+  {
+    "question": "How long must identity and address records be kept after a customer closes their relationship with the bank?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "for at least five years after the business relationship has ended"
+    ],
+    "reference_answer": "At least five years after the business relationship has ended (para 50(2))."
+  },
+  {
+    "question": "What is the deadline for uploading a new customer's KYC records to the Central KYC Records Registry?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "upload onto CKYCR within 10 days of commencement"
+    ],
+    "reference_answer": "Within 10 days of the start of the account-based relationship (Rule 9(1A) of the PML Rules, as required by the Directions)."
+  },
+  {
+    "question": "How frequently should a bank review the risk category assigned to its accounts?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "periodic review of risk categorisation of accounts, with such periodicity being at least once in every six months"
+    ],
+    "reference_answer": "At least once every six months (para 41(1))."
+  },
+  {
+    "question": "For an account opened remotely without meeting the customer, what must the first transaction be?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "First transaction in such accounts shall be a credit from existing KYC"
+    ],
+    "reference_answer": "A credit from an existing KYC-compliant bank account of the customer (para 44(5))."
+  },
+  {
+    "question": "How recent must an Aadhaar XML file or QR code be when it is used for video KYC?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "not older than three working days from the date of carrying out V-CIP"
+    ],
+    "reference_answer": "Its generation date must be no older than three working days before the V-CIP is carried out (para 27)."
+  },
+  {
+    "question": "If a bank downloads KYC records from CKYCR, does it have to re-verify the customer's identity?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "The RE that has last uploaded or updated the customer’s KYC records in the CKYCR shall be responsible for verifying the identity"
+    ],
+    "reference_answer": "No, as long as the records are current and PML-compliant: the entity that last uploaded or updated them is responsible for verification."
+  },
+  {
+    "question": "How should banks treat customers onboarded in non-face-to-face mode from a risk perspective?",
+    "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+    "evidence": [
+      "The bank shall categorise such customers as high-risk customers"
+    ],
+    "reference_answer": "As high-risk customers, with enhanced monitoring until identity is verified face to face or through V-CIP (para 44(6))."
+  },
+  {
+    "question": "What are the layers of the NBFC regulatory structure?",
+    "expected_source": "nbfc_sbr_directions_2025.pdf",
+    "evidence": [
+      "NBFCs in the lowest layer shall be known as NBFCs -Base Layer"
+    ],
+    "reference_answer": "Four layers: Base Layer (NBFC-BL), Middle Layer (NBFC-ML), Upper Layer (NBFC-UL) and Top Layer (NBFC-TL) (para 8)."
+  },
+  {
+    "question": "Which NBFC layer is expected to have no members?",
+    "expected_source": "nbfc_sbr_directions_2025.pdf",
+    "evidence": [
+      "The Top Layer will ideally remain empty"
+    ],
+    "reference_answer": "The Top Layer, which fills only if RBI sees a substantial increase in systemic risk from specific Upper Layer NBFCs (paras 13-14)."
+  },
+  {
+    "question": "What test now decides whether an NBFC is in the Upper Layer?",
+    "expected_source": "nbfc_sbr_directions_2025.pdf",
+    "evidence": [
+      "asset size of ₹1,00,000 crore and above as per the latest audited balance sheet"
+    ],
+    "reference_answer": "Asset size of ₹1,00,000 crore and above as per the latest audited balance sheet (para 24, substituted June 2026)."
+  },
+  {
+    "question": "Once classified as Upper Layer, how long must an NBFC stay under the enhanced rules?",
+    "expected_source": "nbfc_sbr_directions_2025.pdf",
+    "evidence": [
+      "at least for a period of five years from its classification in the layer"
+    ],
+    "reference_answer": "At least five years, even if it stops meeting the criteria; it leaves only after not meeting them for five consecutive years (para 28)."
+  },
+  {
+    "question": "How long does a newly identified Upper Layer NBFC get to comply with the enhanced requirements?",
+    "expected_source": "nbfc_sbr_directions_2025.pdf",
+    "evidence": [
+      "within a maximum time-period of 24 months"
+    ],
+    "reference_answer": "A maximum of 24 months from RBI's advice, including three months to put a Board-approved implementation plan in place (para 27)."
+  },
+  {
+    "question": "What is the principal business test for treating a company as an NBFC?",
+    "expected_source": "nbfc_sbr_directions_2025.pdf",
+    "evidence": [
+      "financial assets are more than 50 per cent of its total assets"
+    ],
+    "reference_answer": "Financial assets over 50% of total assets (net of intangibles) and income from financial assets over 50% of gross income; both must hold (para 38)."
+  },
+  {
+    "question": "What net owned fund does an investment and credit company need to operate as an NBFC?",
+    "expected_source": "nbfc_sbr_directions_2025.pdf",
+    "evidence": [
+      "specifies ₹10 crore as the Net Owned Fund (NOF) required for an NBFC -ICC"
+    ],
+    "reference_answer": "₹10 crore, the same as NBFC-MFI and NBFC-Factor, with a glide path for existing NBFCs (paras 39, 42)."
+  },
+  {
+    "question": "What is the minimum net owned fund for an infrastructure finance company?",
+    "expected_source": "nbfc_sbr_directions_2025.pdf",
+    "evidence": [
+      "For NBFC-IFC and IDF-NBFC, the NOF shall be ₹300 crore"
+    ],
+    "reference_answer": "₹300 crore, for both NBFC-IFC and IDF-NBFC (para 41)."
+  },
+  {
+    "question": "How often is the asset-size threshold for the Upper Layer reviewed?",
+    "expected_source": "nbfc_sbr_directions_2025.pdf",
+    "evidence": [
+      "shall be reviewed every three years"
+    ],
+    "reference_answer": "Every three years (para 31)."
+  },
+  {
+    "question": "What is the minimum cooling-off period a borrower gets on a digital loan?",
+    "expected_source": null,
+    "evidence": [],
+    "reference_answer": "At least one day under the Digital Lending Directions, which aren't in the current corpus.",
+    "note": "Out of corpus: checks the assistant says it can't find the answer."
+  },
+  {
+    "question": "What is the maximum size of a default loss guarantee relative to the loan pool it covers?",
+    "expected_source": null,
+    "evidence": [],
+    "reference_answer": "Five per cent under the Digital Lending Directions, which aren't in the current corpus.",
+    "note": "Out of corpus: checks the assistant says it can't find the answer."
+  },
+  {
+    "question": "What capital adequacy ratio must a small finance bank maintain?",
+    "expected_source": null,
+    "evidence": [],
+    "reference_answer": "Not covered: neither document regulates small finance banks' capital.",
+    "note": "Out of corpus: checks the assistant says it can't find the answer."
+  }
+]

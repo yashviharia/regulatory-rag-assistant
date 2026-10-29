@@ -1,0 +1,20 @@
+# Render blueprint. The build installs deps and runs ingest, so the ChromaDB
+# collection exists before the API starts. Source PDFs are committed in
+# data/raw/ because rbidocs.rbi.org.in drops scripted downloads.
+services:
+  - type: web
+    name: regulatory-rag-assistant
+    runtime: python
+    plan: free
+    # CPU-only torch first: the default PyPI wheel on Linux pulls ~2 GB of CUDA libs
+    buildCommand: >-
+      pip install torch --index-url https://download.pytorch.org/whl/cpu &&
+      pip install -r requirements.txt &&
+      python src/ingest.py
+    startCommand: uvicorn src.api:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: GROQ_API_KEY
+        sync: false

@@ -1,0 +1,89 @@
+[
+  {
+    "question": "Who remains legally responsible if a Lending Service Provider makes a mistake while processing a digital loan?",
+    "expected_source": "digital_lending_directions_2025.pdf",
+    "evidence": [
+      "remain fully responsible and liable for all acts and omissions of the LSP"
+    ],
+    "reference_answer": "The RE remains fully responsible and liable for all acts and omissions of the LSP; outsourcing to an LSP does not dilute or absolve the RE of its obligations (para 5(vii))."
+  },
+  {
+    "question": "Can a digital lending app read a borrower's contact list?",
+    "expected_source": "digital_lending_directions_2025.pdf",
+    "evidence": [
+      "contact list, call logs, telephony functions"
+    ],
+    "reference_answer": "No. DLAs must desist from accessing phone resources like files and media, contact list, call logs and telephony functions; only one-time access to camera, microphone or location for onboarding/KYC, with explicit consent."
+  },
+  {
+    "question": "What is the maximum size of a default loss guarantee relative to the loan pool it covers?",
+    "expected_source": "digital_lending_directions_2025.pdf",
+    "evidence": [
+      "shall not exceed five per cent of the total amount disbursed"
+    ],
+    "reference_answer": "Total DLG cover on an outstanding portfolio cannot exceed five per cent of the total amount disbursed out of that loan portfolio (para 23)."
+  },
+  {
+    "question": "How often does a low-risk individual customer's KYC need to be updated?",
+    "expected_source": null,
+    "evidence": [],
+    "reference_answer": "Roughly every 10 years for low-risk individual customers.",
+    "note": "Not in data/raw: the rule is in the KYC Master Direction 2016, which isn't downloaded yet. Kept to check the model says it can't find the answer."
+  },
+  {
+    "question": "What happens to an account if a customer doesn't respond to a KYC update request?",
+    "expected_source": null,
+    "evidence": [],
+    "reference_answer": "The entity can restrict account operations (e.g. allow credits but not debits) rather than closing it.",
+    "note": "Not in data/raw: the rule is in the KYC Master Direction 2016, which isn't downloaded yet. Kept to check the model says it can't find the answer."
+  },
+  {
+    "question": "What is required to reactivate an inoperative account?",
+    "expected_source": null,
+    "evidence": [],
+    "reference_answer": "The customer must appear in person or via video KYC and complete fresh due diligence.",
+    "note": "Not in data/raw: the rule is in the KYC Master Direction 2016, which isn't downloaded yet. Kept to check the model says it can't find the answer."
+  },
+  {
+    "question": "What are the four NBFC regulatory layers called?",
+    "expected_source": [
+      "nbfc_scale_based_regulation_2023.pdf",
+      "nbfc_sbr_framework_2021.pdf"
+    ],
+    "evidence": [
+      "shall be known as NBFC - Base Layer"
+    ],
+    "reference_answer": "Base Layer (NBFC-BL), Middle Layer (NBFC-ML), Upper Layer (NBFC-UL) and Top Layer (NBFC-TL)."
+  },
+  {
+    "question": "How often is the list of Upper Layer NBFCs reviewed?",
+    "expected_source": [
+      "nbfc_scale_based_regulation_2023.pdf",
+      "nbfc_sbr_framework_2021.pdf"
+    ],
+    "evidence": [
+      "performed annually based on their position as on March 31 each year"
+    ],
+    "reference_answer": "Annually: the scores used to identify Upper Layer NBFCs are computed every year based on their position as on March 31."
+  },
+  {
+    "question": "Which NBFC layer is currently empty in practice?",
+    "expected_source": [
+      "nbfc_scale_based_regulation_2023.pdf",
+      "nbfc_sbr_framework_2021.pdf"
+    ],
+    "evidence": [
+      "The Top Layer will ideally remain empty",
+      "The Top Layer is ideally expected to be empty"
+    ],
+    "reference_answer": "The Top Layer (NBFC-TL), which is ideally expected to remain empty unless RBI sees a substantial increase in systemic risk from specific Upper Layer NBFCs."
+  },
+  {
+    "question": "What is the minimum cooling-off period a borrower gets on a digital loan?",
+    "expected_source": "digital_lending_directions_2025.pdf",
+    "evidence": [
+      "subject to the period so determined not being less than one day"
+    ],
+    "reference_answer": "The cooling-off period is set by the RE's Board in its loan policy but cannot be less than one day; during it the borrower can exit by paying principal and proportionate APR without penalty (para 10)."
+  }
+]

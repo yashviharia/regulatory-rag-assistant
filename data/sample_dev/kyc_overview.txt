@@ -1,0 +1,33 @@
+KYC / CUSTOMER DUE DILIGENCE — DEV FIXTURE (simplified, not an official text)
+
+1. Why KYC matters
+Banks and NBFCs must know who their customers really are, both when an
+account is opened and on an ongoing basis, mainly to prevent money
+laundering and the financing of illegal activity.
+
+2. Periodic updation
+Customer records are not a one-time exercise. Regulated entities must
+periodically refresh KYC details:
+- Low-risk individual customers: roughly every 10 years.
+- Medium-risk customers: roughly every 8 years.
+- High-risk customers: roughly every 2 years.
+If a customer doesn't respond to an update request, the entity can
+restrict the account's operation (for example, allowing credits but not
+debits) until the update is done, rather than closing it outright.
+
+3. Simplified updation
+If nothing material has changed about the customer (address, business,
+risk category), a simplified updation — a self-declaration rather than
+fresh paperwork — is generally allowed for individual customers.
+
+4. Inoperative accounts
+Accounts with no customer-induced transactions for a long stretch (the
+exact threshold is set by the entity's board, commonly around 2 years)
+are reclassified as inoperative. Reactivating them requires the customer
+to appear (in person or through video KYC) and complete fresh due
+diligence, not just make a transaction.
+
+5. Risk categorisation
+Customers must be sorted into risk categories (low/medium/high) based on
+factors like their location, type of business, and transaction pattern,
+and this categorisation drives how often their KYC gets refreshed.

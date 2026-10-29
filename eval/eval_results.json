@@ -1,0 +1,2084 @@
+[
+  {
+    "strategy": "fixed_small",
+    "mode": "dense",
+    "doc_hit_rate": 1.0,
+    "chunk_hit_rate": 0.6071428571428571,
+    "chunk_mrr": 0.4613095238095238,
+    "n_questions": 28,
+    "n_out_of_corpus": 3,
+    "details": [
+      {
+        "question": "How often does a bank have to refresh the KYC of a customer it rates as high risk?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk47",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk51",
+          "kyc_directions_commercial_banks_2025.pdf::chunk52"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the KYC re-verification interval for medium-risk customers?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk47",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk72",
+          "kyc_directions_commercial_banks_2025.pdf::chunk49"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "A low-risk individual's KYC update is overdue. Can the bank stop their transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk47",
+          "kyc_directions_commercial_banks_2025.pdf::chunk53",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk49"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "If a customer's only KYC change is a new address, how must the bank confirm it?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk55",
+          "kyc_directions_commercial_banks_2025.pdf::chunk72",
+          "kyc_directions_commercial_banks_2025.pdf::chunk48",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 3
+      },
+      {
+        "question": "Can a business correspondent collect a customer's KYC self-declaration on the bank's behalf?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk49",
+          "kyc_directions_commercial_banks_2025.pdf::chunk48",
+          "kyc_directions_commercial_banks_2025.pdf::chunk6",
+          "kyc_directions_commercial_banks_2025.pdf::chunk28"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "What is the maximum balance allowed in a small account?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk40",
+          "kyc_directions_commercial_banks_2025.pdf::chunk39",
+          "kyc_directions_commercial_banks_2025.pdf::chunk2",
+          "kyc_directions_commercial_banks_2025.pdf::chunk46"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "How much money can be credited to a small account in a year?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk40",
+          "kyc_directions_commercial_banks_2025.pdf::chunk39",
+          "kyc_directions_commercial_banks_2025.pdf::chunk46",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What happens if the balance of an account opened with Aadhaar OTP e-KYC goes above the limit?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk32",
+          "kyc_directions_commercial_banks_2025.pdf::chunk31",
+          "kyc_directions_commercial_banks_2025.pdf::chunk28",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "What shareholding makes someone a beneficial owner of a company customer?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk3",
+          "kyc_directions_commercial_banks_2025.pdf::chunk116",
+          "nbfc_sbr_directions_2025.pdf::chunk27",
+          "kyc_directions_commercial_banks_2025.pdf::chunk24"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Who has to sign off before a bank opens an account for a politically exposed person?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk40",
+          "kyc_directions_commercial_banks_2025.pdf::chunk39",
+          "kyc_directions_commercial_banks_2025.pdf::chunk44",
+          "kyc_directions_commercial_banks_2025.pdf::chunk45"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Does the PEP definition cover domestic politicians?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk56",
+          "kyc_directions_commercial_banks_2025.pdf::chunk116",
+          "kyc_directions_commercial_banks_2025.pdf::chunk98",
+          "kyc_directions_commercial_banks_2025.pdf::chunk99"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "For how long must a bank keep records of customer transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk61",
+          "kyc_directions_commercial_banks_2025.pdf::chunk53",
+          "kyc_directions_commercial_banks_2025.pdf::chunk63",
+          "kyc_directions_commercial_banks_2025.pdf::chunk40"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How long must identity and address records be kept after a customer closes their relationship with the bank?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk61",
+          "kyc_directions_commercial_banks_2025.pdf::chunk45",
+          "kyc_directions_commercial_banks_2025.pdf::chunk40",
+          "kyc_directions_commercial_banks_2025.pdf::chunk53"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the deadline for uploading a new customer's KYC records to the Central KYC Records Registry?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk70",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk52",
+          "kyc_directions_commercial_banks_2025.pdf::chunk72"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How frequently should a bank review the risk category assigned to its accounts?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk46",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk22",
+          "kyc_directions_commercial_banks_2025.pdf::chunk47"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "For an account opened remotely without meeting the customer, what must the first transaction be?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk23",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9",
+          "kyc_directions_commercial_banks_2025.pdf::chunk36",
+          "kyc_directions_commercial_banks_2025.pdf::chunk40"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How recent must an Aadhaar XML file or QR code be when it is used for video KYC?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk37",
+          "kyc_directions_commercial_banks_2025.pdf::chunk29",
+          "kyc_directions_commercial_banks_2025.pdf::chunk26",
+          "kyc_directions_commercial_banks_2025.pdf::chunk36"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 4
+      },
+      {
+        "question": "If a bank downloads KYC records from CKYCR, does it have to re-verify the customer's identity?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk72",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk49",
+          "kyc_directions_commercial_banks_2025.pdf::chunk6"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How should banks treat customers onboarded in non-face-to-face mode from a risk perspective?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk54",
+          "kyc_directions_commercial_banks_2025.pdf::chunk22",
+          "kyc_directions_commercial_banks_2025.pdf::chunk75",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What are the layers of the NBFC regulatory structure?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk11",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk12",
+          "nbfc_sbr_directions_2025.pdf::chunk1"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Which NBFC layer is expected to have no members?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk12",
+          "nbfc_sbr_directions_2025.pdf::chunk11"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What test now decides whether an NBFC is in the Upper Layer?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk11",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk12",
+          "nbfc_sbr_directions_2025.pdf::chunk14"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Once classified as Upper Layer, how long must an NBFC stay under the enhanced rules?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk17",
+          "nbfc_sbr_directions_2025.pdf::chunk11",
+          "nbfc_sbr_directions_2025.pdf::chunk12",
+          "nbfc_sbr_directions_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How long does a newly identified Upper Layer NBFC get to comply with the enhanced requirements?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk17",
+          "nbfc_sbr_directions_2025.pdf::chunk11",
+          "nbfc_sbr_directions_2025.pdf::chunk12",
+          "nbfc_sbr_directions_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the principal business test for treating a company as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk20",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk12",
+          "nbfc_sbr_directions_2025.pdf::chunk5"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What net owned fund does an investment and credit company need to operate as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk27",
+          "nbfc_sbr_directions_2025.pdf::chunk25",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk5"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "What is the minimum net owned fund for an infrastructure finance company?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk27",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk25",
+          "nbfc_sbr_directions_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 3
+      },
+      {
+        "question": "How often is the asset-size threshold for the Upper Layer reviewed?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk13",
+          "nbfc_sbr_directions_2025.pdf::chunk12"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      }
+    ]
+  },
+  {
+    "strategy": "fixed_small",
+    "mode": "hybrid",
+    "doc_hit_rate": 1.0,
+    "chunk_hit_rate": 0.75,
+    "chunk_mrr": 0.5892857142857143,
+    "n_questions": 28,
+    "n_out_of_corpus": 3,
+    "details": [
+      {
+        "question": "How often does a bank have to refresh the KYC of a customer it rates as high risk?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk47",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16",
+          "kyc_directions_commercial_banks_2025.pdf::chunk51",
+          "kyc_directions_commercial_banks_2025.pdf::chunk24"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the KYC re-verification interval for medium-risk customers?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk47",
+          "kyc_directions_commercial_banks_2025.pdf::chunk72",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "A low-risk individual's KYC update is overdue. Can the bank stop their transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk47",
+          "kyc_directions_commercial_banks_2025.pdf::chunk52",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk49"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "If a customer's only KYC change is a new address, how must the bank confirm it?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk55",
+          "kyc_directions_commercial_banks_2025.pdf::chunk50",
+          "kyc_directions_commercial_banks_2025.pdf::chunk48",
+          "kyc_directions_commercial_banks_2025.pdf::chunk47"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 3
+      },
+      {
+        "question": "Can a business correspondent collect a customer's KYC self-declaration on the bank's behalf?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk48",
+          "kyc_directions_commercial_banks_2025.pdf::chunk49",
+          "kyc_directions_commercial_banks_2025.pdf::chunk25",
+          "kyc_directions_commercial_banks_2025.pdf::chunk6"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the maximum balance allowed in a small account?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk40",
+          "kyc_directions_commercial_banks_2025.pdf::chunk39",
+          "kyc_directions_commercial_banks_2025.pdf::chunk46",
+          "kyc_directions_commercial_banks_2025.pdf::chunk2"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "How much money can be credited to a small account in a year?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk40",
+          "kyc_directions_commercial_banks_2025.pdf::chunk39",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9",
+          "kyc_directions_commercial_banks_2025.pdf::chunk2"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What happens if the balance of an account opened with Aadhaar OTP e-KYC goes above the limit?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk32",
+          "kyc_directions_commercial_banks_2025.pdf::chunk31",
+          "kyc_directions_commercial_banks_2025.pdf::chunk28",
+          "kyc_directions_commercial_banks_2025.pdf::chunk26"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "What shareholding makes someone a beneficial owner of a company customer?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk3",
+          "kyc_directions_commercial_banks_2025.pdf::chunk116",
+          "kyc_directions_commercial_banks_2025.pdf::chunk97",
+          "kyc_directions_commercial_banks_2025.pdf::chunk42"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Who has to sign off before a bank opens an account for a politically exposed person?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk56",
+          "kyc_directions_commercial_banks_2025.pdf::chunk44",
+          "kyc_directions_commercial_banks_2025.pdf::chunk39",
+          "kyc_directions_commercial_banks_2025.pdf::chunk53"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Does the PEP definition cover domestic politicians?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk56",
+          "kyc_directions_commercial_banks_2025.pdf::chunk116",
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk98"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "For how long must a bank keep records of customer transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk61",
+          "kyc_directions_commercial_banks_2025.pdf::chunk23",
+          "kyc_directions_commercial_banks_2025.pdf::chunk80",
+          "kyc_directions_commercial_banks_2025.pdf::chunk49"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How long must identity and address records be kept after a customer closes their relationship with the bank?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk61",
+          "kyc_directions_commercial_banks_2025.pdf::chunk53",
+          "kyc_directions_commercial_banks_2025.pdf::chunk49",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the deadline for uploading a new customer's KYC records to the Central KYC Records Registry?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk70",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk69",
+          "kyc_directions_commercial_banks_2025.pdf::chunk6"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 3
+      },
+      {
+        "question": "How frequently should a bank review the risk category assigned to its accounts?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk46",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk40",
+          "kyc_directions_commercial_banks_2025.pdf::chunk47"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "For an account opened remotely without meeting the customer, what must the first transaction be?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk23",
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9",
+          "kyc_directions_commercial_banks_2025.pdf::chunk40"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How recent must an Aadhaar XML file or QR code be when it is used for video KYC?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk37",
+          "kyc_directions_commercial_banks_2025.pdf::chunk36",
+          "kyc_directions_commercial_banks_2025.pdf::chunk29",
+          "kyc_directions_commercial_banks_2025.pdf::chunk26"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "If a bank downloads KYC records from CKYCR, does it have to re-verify the customer's identity?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk72",
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk6",
+          "kyc_directions_commercial_banks_2025.pdf::chunk25"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How should banks treat customers onboarded in non-face-to-face mode from a risk perspective?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk54",
+          "kyc_directions_commercial_banks_2025.pdf::chunk55",
+          "kyc_directions_commercial_banks_2025.pdf::chunk22",
+          "kyc_directions_commercial_banks_2025.pdf::chunk34"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "What are the layers of the NBFC regulatory structure?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk11",
+          "nbfc_sbr_directions_2025.pdf::chunk1",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk19"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Which NBFC layer is expected to have no members?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk12",
+          "nbfc_sbr_directions_2025.pdf::chunk19"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What test now decides whether an NBFC is in the Upper Layer?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk11",
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk13"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Once classified as Upper Layer, how long must an NBFC stay under the enhanced rules?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk17",
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk19",
+          "nbfc_sbr_directions_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How long does a newly identified Upper Layer NBFC get to comply with the enhanced requirements?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk17",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk11",
+          "nbfc_sbr_directions_2025.pdf::chunk19"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the principal business test for treating a company as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk20",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk19"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What net owned fund does an investment and credit company need to operate as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk25",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk26"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the minimum net owned fund for an infrastructure finance company?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk25",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk6"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "How often is the asset-size threshold for the Upper Layer reviewed?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk17",
+          "nbfc_sbr_directions_2025.pdf::chunk13"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 3
+      }
+    ]
+  },
+  {
+    "strategy": "fixed_large",
+    "mode": "dense",
+    "doc_hit_rate": 1.0,
+    "chunk_hit_rate": 0.5357142857142857,
+    "chunk_mrr": 0.41666666666666663,
+    "n_questions": 28,
+    "n_out_of_corpus": 3,
+    "details": [
+      {
+        "question": "How often does a bank have to refresh the KYC of a customer it rates as high risk?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17",
+          "kyc_directions_commercial_banks_2025.pdf::chunk25",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the KYC re-verification interval for medium-risk customers?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk25",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "A low-risk individual's KYC update is overdue. Can the bank stop their transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "If a customer's only KYC change is a new address, how must the bank confirm it?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk17",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Can a business correspondent collect a customer's KYC self-declaration on the bank's behalf?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "What is the maximum balance allowed in a small account?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk6",
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk30"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How much money can be credited to a small account in a year?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk30",
+          "kyc_directions_commercial_banks_2025.pdf::chunk36"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What happens if the balance of an account opened with Aadhaar OTP e-KYC goes above the limit?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk10",
+          "kyc_directions_commercial_banks_2025.pdf::chunk13",
+          "kyc_directions_commercial_banks_2025.pdf::chunk11",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 3
+      },
+      {
+        "question": "What shareholding makes someone a beneficial owner of a company customer?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk1",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16",
+          "kyc_directions_commercial_banks_2025.pdf::chunk4",
+          "kyc_directions_commercial_banks_2025.pdf::chunk15"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Who has to sign off before a bank opens an account for a politically exposed person?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16",
+          "kyc_directions_commercial_banks_2025.pdf::chunk19"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "Does the PEP definition cover domestic politicians?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk4",
+          "kyc_directions_commercial_banks_2025.pdf::chunk42",
+          "kyc_directions_commercial_banks_2025.pdf::chunk35"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "For how long must a bank keep records of customer transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk22",
+          "kyc_directions_commercial_banks_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How long must identity and address records be kept after a customer closes their relationship with the bank?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk22",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the deadline for uploading a new customer's KYC records to the Central KYC Records Registry?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk25",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk2",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How frequently should a bank review the risk category assigned to its accounts?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk27",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "kyc_directions_commercial_banks_2025.pdf::chunk24"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "For an account opened remotely without meeting the customer, what must the first transaction be?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk11",
+          "kyc_directions_commercial_banks_2025.pdf::chunk20"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How recent must an Aadhaar XML file or QR code be when it is used for video KYC?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk13",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9",
+          "kyc_directions_commercial_banks_2025.pdf::chunk2"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "If a bank downloads KYC records from CKYCR, does it have to re-verify the customer's identity?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk25",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How should banks treat customers onboarded in non-face-to-face mode from a risk perspective?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk27",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk6",
+          "kyc_directions_commercial_banks_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What are the layers of the NBFC regulatory structure?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Which NBFC layer is expected to have no members?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk9",
+          "nbfc_sbr_directions_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What test now decides whether an NBFC is in the Upper Layer?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk9",
+          "nbfc_sbr_directions_2025.pdf::chunk6"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Once classified as Upper Layer, how long must an NBFC stay under the enhanced rules?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk9"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How long does a newly identified Upper Layer NBFC get to comply with the enhanced requirements?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk9"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 3
+      },
+      {
+        "question": "What is the principal business test for treating a company as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk7",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk8",
+          "nbfc_sbr_directions_2025.pdf::chunk3"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What net owned fund does an investment and credit company need to operate as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk9",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk2",
+          "nbfc_sbr_directions_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the minimum net owned fund for an infrastructure finance company?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk2",
+          "nbfc_sbr_directions_2025.pdf::chunk9",
+          "nbfc_sbr_directions_2025.pdf::chunk7",
+          "nbfc_sbr_directions_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "How often is the asset-size threshold for the Upper Layer reviewed?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      }
+    ]
+  },
+  {
+    "strategy": "fixed_large",
+    "mode": "hybrid",
+    "doc_hit_rate": 1.0,
+    "chunk_hit_rate": 0.6785714285714286,
+    "chunk_mrr": 0.5476190476190477,
+    "n_questions": 28,
+    "n_out_of_corpus": 3,
+    "details": [
+      {
+        "question": "How often does a bank have to refresh the KYC of a customer it rates as high risk?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk13",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the KYC re-verification interval for medium-risk customers?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk25",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "A low-risk individual's KYC update is overdue. Can the bank stop their transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk25"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "If a customer's only KYC change is a new address, how must the bank confirm it?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk17",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk2",
+          "kyc_directions_commercial_banks_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Can a business correspondent collect a customer's KYC self-declaration on the bank's behalf?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk17",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the maximum balance allowed in a small account?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16",
+          "kyc_directions_commercial_banks_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk0"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How much money can be credited to a small account in a year?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16",
+          "kyc_directions_commercial_banks_2025.pdf::chunk0",
+          "kyc_directions_commercial_banks_2025.pdf::chunk26"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What happens if the balance of an account opened with Aadhaar OTP e-KYC goes above the limit?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk11",
+          "kyc_directions_commercial_banks_2025.pdf::chunk13",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What shareholding makes someone a beneficial owner of a company customer?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk1",
+          "kyc_directions_commercial_banks_2025.pdf::chunk4",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16",
+          "kyc_directions_commercial_banks_2025.pdf::chunk15"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Who has to sign off before a bank opens an account for a politically exposed person?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Does the PEP definition cover domestic politicians?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk4",
+          "kyc_directions_commercial_banks_2025.pdf::chunk21",
+          "kyc_directions_commercial_banks_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "For how long must a bank keep records of customer transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk22",
+          "kyc_directions_commercial_banks_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How long must identity and address records be kept after a customer closes their relationship with the bank?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk16",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the deadline for uploading a new customer's KYC records to the Central KYC Records Registry?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk25",
+          "kyc_directions_commercial_banks_2025.pdf::chunk2",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How frequently should a bank review the risk category assigned to its accounts?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "kyc_directions_commercial_banks_2025.pdf::chunk6",
+          "kyc_directions_commercial_banks_2025.pdf::chunk27",
+          "kyc_directions_commercial_banks_2025.pdf::chunk14"
+        ],
+        "doc_rank": 2,
+        "chunk_rank": null
+      },
+      {
+        "question": "For an account opened remotely without meeting the customer, what must the first transaction be?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk14",
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How recent must an Aadhaar XML file or QR code be when it is used for video KYC?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk13",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9",
+          "kyc_directions_commercial_banks_2025.pdf::chunk2"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "If a bank downloads KYC records from CKYCR, does it have to re-verify the customer's identity?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk25",
+          "kyc_directions_commercial_banks_2025.pdf::chunk9",
+          "kyc_directions_commercial_banks_2025.pdf::chunk8",
+          "kyc_directions_commercial_banks_2025.pdf::chunk11"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How should banks treat customers onboarded in non-face-to-face mode from a risk perspective?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk6",
+          "kyc_directions_commercial_banks_2025.pdf::chunk17",
+          "kyc_directions_commercial_banks_2025.pdf::chunk11"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What are the layers of the NBFC regulatory structure?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk3"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 4
+      },
+      {
+        "question": "Which NBFC layer is expected to have no members?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk7",
+          "nbfc_sbr_directions_2025.pdf::chunk3"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 4
+      },
+      {
+        "question": "What test now decides whether an NBFC is in the Upper Layer?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk3"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Once classified as Upper Layer, how long must an NBFC stay under the enhanced rules?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How long does a newly identified Upper Layer NBFC get to comply with the enhanced requirements?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk3"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "What is the principal business test for treating a company as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk7",
+          "nbfc_sbr_directions_2025.pdf::chunk2",
+          "nbfc_sbr_directions_2025.pdf::chunk8",
+          "nbfc_sbr_directions_2025.pdf::chunk6"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What net owned fund does an investment and credit company need to operate as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk9",
+          "nbfc_sbr_directions_2025.pdf::chunk8",
+          "nbfc_sbr_directions_2025.pdf::chunk1",
+          "nbfc_sbr_directions_2025.pdf::chunk4"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "What is the minimum net owned fund for an infrastructure finance company?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk2",
+          "nbfc_sbr_directions_2025.pdf::chunk1",
+          "nbfc_sbr_directions_2025.pdf::chunk9",
+          "nbfc_sbr_directions_2025.pdf::chunk11"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 3
+      },
+      {
+        "question": "How often is the asset-size threshold for the Upper Layer reviewed?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk5",
+          "nbfc_sbr_directions_2025.pdf::chunk6",
+          "nbfc_sbr_directions_2025.pdf::chunk4",
+          "nbfc_sbr_directions_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      }
+    ]
+  },
+  {
+    "strategy": "section",
+    "mode": "dense",
+    "doc_hit_rate": 1.0,
+    "chunk_hit_rate": 0.7857142857142857,
+    "chunk_mrr": 0.7232142857142857,
+    "n_questions": 28,
+    "n_out_of_corpus": 3,
+    "details": [
+      {
+        "question": "How often does a bank have to refresh the KYC of a customer it rates as high risk?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk60",
+          "kyc_directions_commercial_banks_2025.pdf::chunk65",
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk66"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the KYC re-verification interval for medium-risk customers?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk66",
+          "kyc_directions_commercial_banks_2025.pdf::chunk60",
+          "kyc_directions_commercial_banks_2025.pdf::chunk65",
+          "kyc_directions_commercial_banks_2025.pdf::chunk64"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "A low-risk individual's KYC update is overdue. Can the bank stop their transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk60",
+          "kyc_directions_commercial_banks_2025.pdf::chunk66",
+          "kyc_directions_commercial_banks_2025.pdf::chunk65",
+          "kyc_directions_commercial_banks_2025.pdf::chunk42"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "If a customer's only KYC change is a new address, how must the bank confirm it?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk61",
+          "kyc_directions_commercial_banks_2025.pdf::chunk90",
+          "kyc_directions_commercial_banks_2025.pdf::chunk89",
+          "kyc_directions_commercial_banks_2025.pdf::chunk63"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Can a business correspondent collect a customer's KYC self-declaration on the bank's behalf?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk62",
+          "kyc_directions_commercial_banks_2025.pdf::chunk37",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10",
+          "kyc_directions_commercial_banks_2025.pdf::chunk42"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the maximum balance allowed in a small account?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk50",
+          "kyc_directions_commercial_banks_2025.pdf::chunk51",
+          "nbfc_sbr_directions_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk41"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How much money can be credited to a small account in a year?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk50",
+          "kyc_directions_commercial_banks_2025.pdf::chunk51",
+          "kyc_directions_commercial_banks_2025.pdf::chunk13",
+          "kyc_directions_commercial_banks_2025.pdf::chunk94"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What happens if the balance of an account opened with Aadhaar OTP e-KYC goes above the limit?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk41",
+          "kyc_directions_commercial_banks_2025.pdf::chunk63",
+          "kyc_directions_commercial_banks_2025.pdf::chunk42",
+          "kyc_directions_commercial_banks_2025.pdf::chunk43"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What shareholding makes someone a beneficial owner of a company customer?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk7",
+          "kyc_directions_commercial_banks_2025.pdf::chunk57",
+          "nbfc_sbr_directions_2025.pdf::chunk33",
+          "kyc_directions_commercial_banks_2025.pdf::chunk54"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Who has to sign off before a bank opens an account for a politically exposed person?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk75",
+          "kyc_directions_commercial_banks_2025.pdf::chunk57",
+          "kyc_directions_commercial_banks_2025.pdf::chunk73"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Does the PEP definition cover domestic politicians?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk75",
+          "kyc_directions_commercial_banks_2025.pdf::chunk146",
+          "kyc_directions_commercial_banks_2025.pdf::chunk115"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "For how long must a bank keep records of customer transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk76",
+          "kyc_directions_commercial_banks_2025.pdf::chunk79",
+          "kyc_directions_commercial_banks_2025.pdf::chunk77",
+          "kyc_directions_commercial_banks_2025.pdf::chunk49"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How long must identity and address records be kept after a customer closes their relationship with the bank?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk76",
+          "kyc_directions_commercial_banks_2025.pdf::chunk77",
+          "kyc_directions_commercial_banks_2025.pdf::chunk67",
+          "kyc_directions_commercial_banks_2025.pdf::chunk51"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the deadline for uploading a new customer's KYC records to the Central KYC Records Registry?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk88",
+          "kyc_directions_commercial_banks_2025.pdf::chunk89",
+          "kyc_directions_commercial_banks_2025.pdf::chunk90",
+          "kyc_directions_commercial_banks_2025.pdf::chunk65"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How frequently should a bank review the risk category assigned to its accounts?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk22",
+          "kyc_directions_commercial_banks_2025.pdf::chunk59",
+          "kyc_directions_commercial_banks_2025.pdf::chunk29",
+          "kyc_directions_commercial_banks_2025.pdf::chunk95"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "For an account opened remotely without meeting the customer, what must the first transaction be?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk30",
+          "kyc_directions_commercial_banks_2025.pdf::chunk26",
+          "kyc_directions_commercial_banks_2025.pdf::chunk51",
+          "kyc_directions_commercial_banks_2025.pdf::chunk50"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How recent must an Aadhaar XML file or QR code be when it is used for video KYC?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk47",
+          "kyc_directions_commercial_banks_2025.pdf::chunk38",
+          "kyc_directions_commercial_banks_2025.pdf::chunk36",
+          "kyc_directions_commercial_banks_2025.pdf::chunk63"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "If a bank downloads KYC records from CKYCR, does it have to re-verify the customer's identity?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk90",
+          "kyc_directions_commercial_banks_2025.pdf::chunk89",
+          "kyc_directions_commercial_banks_2025.pdf::chunk88",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How should banks treat customers onboarded in non-face-to-face mode from a risk perspective?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk29",
+          "kyc_directions_commercial_banks_2025.pdf::chunk45",
+          "kyc_directions_commercial_banks_2025.pdf::chunk69",
+          "kyc_directions_commercial_banks_2025.pdf::chunk95"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What are the layers of the NBFC regulatory structure?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk15",
+          "nbfc_sbr_directions_2025.pdf::chunk16",
+          "nbfc_sbr_directions_2025.pdf::chunk18"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Which NBFC layer is expected to have no members?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk16",
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk15"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 4
+      },
+      {
+        "question": "What test now decides whether an NBFC is in the Upper Layer?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk15",
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk16"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Once classified as Upper Layer, how long must an NBFC stay under the enhanced rules?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk15",
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk16"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How long does a newly identified Upper Layer NBFC get to comply with the enhanced requirements?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk21",
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk32",
+          "nbfc_sbr_directions_2025.pdf::chunk16"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the principal business test for treating a company as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk26",
+          "nbfc_sbr_directions_2025.pdf::chunk25",
+          "nbfc_sbr_directions_2025.pdf::chunk2",
+          "nbfc_sbr_directions_2025.pdf::chunk28"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What net owned fund does an investment and credit company need to operate as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk31",
+          "nbfc_sbr_directions_2025.pdf::chunk33",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk26"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the minimum net owned fund for an infrastructure finance company?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk31",
+          "nbfc_sbr_directions_2025.pdf::chunk33",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk34"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How often is the asset-size threshold for the Upper Layer reviewed?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk22",
+          "nbfc_sbr_directions_2025.pdf::chunk19",
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk14"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      }
+    ]
+  },
+  {
+    "strategy": "section",
+    "mode": "hybrid",
+    "doc_hit_rate": 1.0,
+    "chunk_hit_rate": 0.8214285714285714,
+    "chunk_mrr": 0.7797619047619048,
+    "n_questions": 28,
+    "n_out_of_corpus": 3,
+    "details": [
+      {
+        "question": "How often does a bank have to refresh the KYC of a customer it rates as high risk?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk60",
+          "kyc_directions_commercial_banks_2025.pdf::chunk23",
+          "kyc_directions_commercial_banks_2025.pdf::chunk20",
+          "kyc_directions_commercial_banks_2025.pdf::chunk64"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the KYC re-verification interval for medium-risk customers?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk60",
+          "kyc_directions_commercial_banks_2025.pdf::chunk90",
+          "kyc_directions_commercial_banks_2025.pdf::chunk70",
+          "kyc_directions_commercial_banks_2025.pdf::chunk65"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "A low-risk individual's KYC update is overdue. Can the bank stop their transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk60",
+          "kyc_directions_commercial_banks_2025.pdf::chunk65",
+          "kyc_directions_commercial_banks_2025.pdf::chunk89",
+          "kyc_directions_commercial_banks_2025.pdf::chunk90"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "If a customer's only KYC change is a new address, how must the bank confirm it?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk61",
+          "kyc_directions_commercial_banks_2025.pdf::chunk90",
+          "kyc_directions_commercial_banks_2025.pdf::chunk63",
+          "kyc_directions_commercial_banks_2025.pdf::chunk20"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Can a business correspondent collect a customer's KYC self-declaration on the bank's behalf?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk62",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10",
+          "kyc_directions_commercial_banks_2025.pdf::chunk64",
+          "kyc_directions_commercial_banks_2025.pdf::chunk34"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "What is the maximum balance allowed in a small account?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk50",
+          "kyc_directions_commercial_banks_2025.pdf::chunk51",
+          "nbfc_sbr_directions_2025.pdf::chunk19",
+          "kyc_directions_commercial_banks_2025.pdf::chunk13"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How much money can be credited to a small account in a year?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk50",
+          "kyc_directions_commercial_banks_2025.pdf::chunk51",
+          "kyc_directions_commercial_banks_2025.pdf::chunk13",
+          "nbfc_sbr_directions_2025.pdf::chunk19"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What happens if the balance of an account opened with Aadhaar OTP e-KYC goes above the limit?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk41",
+          "kyc_directions_commercial_banks_2025.pdf::chunk42",
+          "kyc_directions_commercial_banks_2025.pdf::chunk63",
+          "kyc_directions_commercial_banks_2025.pdf::chunk43"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What shareholding makes someone a beneficial owner of a company customer?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk57",
+          "kyc_directions_commercial_banks_2025.pdf::chunk54",
+          "kyc_directions_commercial_banks_2025.pdf::chunk146",
+          "kyc_directions_commercial_banks_2025.pdf::chunk7"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Who has to sign off before a bank opens an account for a politically exposed person?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk73",
+          "kyc_directions_commercial_banks_2025.pdf::chunk72",
+          "kyc_directions_commercial_banks_2025.pdf::chunk50"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Does the PEP definition cover domestic politicians?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk71",
+          "kyc_directions_commercial_banks_2025.pdf::chunk75",
+          "kyc_directions_commercial_banks_2025.pdf::chunk18",
+          "kyc_directions_commercial_banks_2025.pdf::chunk146"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "For how long must a bank keep records of customer transactions?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk76",
+          "kyc_directions_commercial_banks_2025.pdf::chunk79",
+          "kyc_directions_commercial_banks_2025.pdf::chunk31",
+          "kyc_directions_commercial_banks_2025.pdf::chunk77"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How long must identity and address records be kept after a customer closes their relationship with the bank?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk76",
+          "kyc_directions_commercial_banks_2025.pdf::chunk67",
+          "kyc_directions_commercial_banks_2025.pdf::chunk77",
+          "kyc_directions_commercial_banks_2025.pdf::chunk31"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the deadline for uploading a new customer's KYC records to the Central KYC Records Registry?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk88",
+          "kyc_directions_commercial_banks_2025.pdf::chunk90",
+          "kyc_directions_commercial_banks_2025.pdf::chunk89",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How frequently should a bank review the risk category assigned to its accounts?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk22",
+          "kyc_directions_commercial_banks_2025.pdf::chunk59",
+          "kyc_directions_commercial_banks_2025.pdf::chunk29",
+          "kyc_directions_commercial_banks_2025.pdf::chunk60"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 2
+      },
+      {
+        "question": "For an account opened remotely without meeting the customer, what must the first transaction be?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk51",
+          "kyc_directions_commercial_banks_2025.pdf::chunk26",
+          "kyc_directions_commercial_banks_2025.pdf::chunk30",
+          "kyc_directions_commercial_banks_2025.pdf::chunk13"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How recent must an Aadhaar XML file or QR code be when it is used for video KYC?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk47",
+          "kyc_directions_commercial_banks_2025.pdf::chunk38",
+          "kyc_directions_commercial_banks_2025.pdf::chunk36",
+          "kyc_directions_commercial_banks_2025.pdf::chunk35"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "If a bank downloads KYC records from CKYCR, does it have to re-verify the customer's identity?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk90",
+          "kyc_directions_commercial_banks_2025.pdf::chunk88",
+          "kyc_directions_commercial_banks_2025.pdf::chunk89",
+          "kyc_directions_commercial_banks_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How should banks treat customers onboarded in non-face-to-face mode from a risk perspective?",
+        "expected_source": "kyc_directions_commercial_banks_2025.pdf",
+        "retrieved": [
+          "kyc_directions_commercial_banks_2025.pdf::chunk70",
+          "kyc_directions_commercial_banks_2025.pdf::chunk69",
+          "kyc_directions_commercial_banks_2025.pdf::chunk29",
+          "kyc_directions_commercial_banks_2025.pdf::chunk106"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What are the layers of the NBFC regulatory structure?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk15",
+          "nbfc_sbr_directions_2025.pdf::chunk2",
+          "nbfc_sbr_directions_2025.pdf::chunk18"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "Which NBFC layer is expected to have no members?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk15",
+          "nbfc_sbr_directions_2025.pdf::chunk16"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 3
+      },
+      {
+        "question": "What test now decides whether an NBFC is in the Upper Layer?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk15",
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk16"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "Once classified as Upper Layer, how long must an NBFC stay under the enhanced rules?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk14",
+          "nbfc_sbr_directions_2025.pdf::chunk15",
+          "nbfc_sbr_directions_2025.pdf::chunk24"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": null
+      },
+      {
+        "question": "How long does a newly identified Upper Layer NBFC get to comply with the enhanced requirements?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk21",
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk19",
+          "nbfc_sbr_directions_2025.pdf::chunk20"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the principal business test for treating a company as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk26",
+          "nbfc_sbr_directions_2025.pdf::chunk25",
+          "nbfc_sbr_directions_2025.pdf::chunk28",
+          "nbfc_sbr_directions_2025.pdf::chunk9"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What net owned fund does an investment and credit company need to operate as an NBFC?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk31",
+          "nbfc_sbr_directions_2025.pdf::chunk33",
+          "nbfc_sbr_directions_2025.pdf::chunk9",
+          "nbfc_sbr_directions_2025.pdf::chunk10"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "What is the minimum net owned fund for an infrastructure finance company?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk31",
+          "nbfc_sbr_directions_2025.pdf::chunk10",
+          "nbfc_sbr_directions_2025.pdf::chunk9",
+          "nbfc_sbr_directions_2025.pdf::chunk33"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      },
+      {
+        "question": "How often is the asset-size threshold for the Upper Layer reviewed?",
+        "expected_source": "nbfc_sbr_directions_2025.pdf",
+        "retrieved": [
+          "nbfc_sbr_directions_2025.pdf::chunk22",
+          "nbfc_sbr_directions_2025.pdf::chunk18",
+          "nbfc_sbr_directions_2025.pdf::chunk19",
+          "nbfc_sbr_directions_2025.pdf::chunk14"
+        ],
+        "doc_rank": 1,
+        "chunk_rank": 1
+      }
+    ]
+  }
+]

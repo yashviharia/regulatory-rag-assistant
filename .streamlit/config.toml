@@ -1,0 +1,9 @@
+# Base palette for Streamlit's own widgets; frontend/theme.py layers the
+# full design (fonts, textures, dark variant) on top.
+[theme]
+base = "light"
+primaryColor = "#B8860B"
+backgroundColor = "#FBF6EC"
+secondaryBackgroundColor = "#F5EDDC"
+textColor = "#2B2114"
+font = "serif"

@@ -36,7 +36,7 @@ short_description: RAG over current RBI KYC and NBFC Master Directions
 
 """
 
-UPLOAD_PATTERNS = ["src/*.py", "frontend/*.py", "data/raw/*.pdf", "requirements.txt"]
+UPLOAD_PATTERNS = ["src/*.py", "frontend/*.py", ".streamlit/config.toml", "data/raw/*.pdf", "requirements.txt"]
 
 
 def main():

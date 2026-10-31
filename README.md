@@ -6,6 +6,7 @@ paragraph. Built to show the parts of RAG that usually get skipped: measuring
 retrieval at the passage level, comparing chunking and retrieval strategies
 with numbers, and noticing when the corpus itself goes out of date.
 
+**Live demo:** https://regulatory-rag-assistant-g8pv5qvhhtguovlbk9ihd8.streamlit.app  
 **Write-up:** [writeup.md](writeup.md)
 
 ![Screenshot: a question about the digital loan cooling-off period answered with a paragraph citation and four source excerpts](docs/screenshot.png)

@@ -115,4 +115,5 @@ the corpus changes.
 
 ## Try it
 
+- Live demo: https://regulatory-rag-assistant-g8pv5qvhhtguovlbk9ihd8.streamlit.app
 - Code: https://github.com/yashviharia/regulatory-rag-assistant

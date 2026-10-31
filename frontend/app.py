@@ -51,7 +51,7 @@ DOC_TITLES = {
 
 EXAMPLES = [
     "What is the minimum cooling-off period on a digital loan?",
-    "When can recovery agents call a borrower?",
+    "What does a bank owe for delay in returning property documents?",
     "What penalty does a bank pay for delaying a credit card closure?",
     "How often must a bank update KYC for a high-risk customer?",
     "What asset size puts an NBFC in the Upper Layer?",

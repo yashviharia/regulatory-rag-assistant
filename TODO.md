@@ -13,7 +13,7 @@
   - [x] API: strategy/mode/top_k params, scores + sections in sources, /sources, CORS, 422/502/503 errors
   - [x] Streamlit UI: chat history, example questions, source cards, settings, auto index build
   - [x] scripts/deploy_hf_space.py (Hugging Face Spaces)
-  - [ ] deploy: `huggingface-cli login`, then `python scripts/deploy_hf_space.py`; add the link to README + writeup.md
+  - [x] deployed on Streamlit Community Cloud: https://regulatory-rag-assistant-g8pv5qvhhtguovlbk9ihd8.streamlit.app
 - [x] Week 5: README with real numbers, write-up post (writeup.md)
   - [ ] demo GIF
 

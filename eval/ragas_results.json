@@ -1,0 +1,79 @@
+[
+  {
+    "strategy": "section",
+    "mode": "hybrid",
+    "judge": "openai/gpt-oss-20b",
+    "n_answerable": 50,
+    "n_fully_scored": 5,
+    "means": {
+      "faithfulness": 0.8327380952380953,
+      "llm_context_precision_with_reference": 0.8999999999549999,
+      "context_recall": 1.0
+    },
+    "details": [
+      {
+        "question": "How often does a bank have to refresh the KYC of a customer it rates as high risk?",
+        "answer": "For commercial banks, the RBI directions require that **high‑risk customers’ KYC be refreshed at least once every two years** from the date the account was opened or the KYC was last updated【Excerpt 1 – source: kyc_directions_commercial_banks_2025.pdf – Chapter VI, paragraph (1)】. This is the specific refresh frequency stipulated for high‑risk customers.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.99999999995,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What is the KYC re-verification interval for medium-risk customers?",
+        "answer": "The RBI directions require that **medium‑risk customers have their KYC refreshed at least once every eight years** (counted from the date the account was opened or from the last KYC update).\n\n* **NBFCs** – This interval is set out in the NBFC KYC circular, Chapter VI, paragraph (1): “the NBFC shall carry out periodic updation … once in every eight years for medium‑risk customers”【Excerpt 1】.  \n* **Commercial banks** – The same rule appears in the commercial‑bank KYC circular, Chapter VI, paragraph (1): “the bank shall carry out periodic updation … once in every eight years for medium‑risk customers”【Excerpt 2】.  \n\nThus, for both NBFCs and commercial banks, the KYC re‑verification (periodic updation) interval for medium‑risk customers is eight years.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.99999999995,
+        "context_recall": 1.0
+      },
+      {
+        "question": "A low-risk individual's KYC update is overdue. Can the bank stop their transactions?",
+        "answer": "No. For a low‑risk individual whose KYC is overdue, a commercial bank **must continue to allow all transactions** and can only require the KYC to be refreshed within the prescribed grace period.\n\n- **Source:** Excerpt 1 (kyc_directions_commercial_banks_2025.pdf), paragraph (2).  \n  - It states that “the bank shall **allow all transactions** and ensure the updation of KYC within one year of its falling due …” and that this also applies to low‑risk individuals “for whom periodic updation of KYC has already fallen due.”  \n\nThus, under the RBI’s commercial‑bank directions, the bank cannot stop the customer’s transactions; it must keep the account active while monitoring the account and completing the KYC update within the allowed timeframe.",
+        "faithfulness": 0.625,
+        "llm_context_precision_with_reference": 0.99999999995,
+        "context_recall": 1.0
+      },
+      {
+        "question": "If a customer's only KYC change is a new address, how must the bank confirm it?",
+        "answer": "**Applicable to commercial banks** (the excerpt is from the RBI directions for commercial banks).\n\nWhen the only change in a customer’s KYC is a new address, the bank must:\n\n1. **Obtain a self‑declaration of the new address** from the customer through any of the following channels:  \n   * the customer’s e‑mail ID registered with the bank,  \n   * the customer’s mobile number registered with the bank,  \n   * ATMs,  \n   * digital channels (online banking, internet banking, mobile‑app), or  \n   * a letter, etc.  \n\n2. **Verify the declared address through “positive confirmation” within two months**. Acceptable methods of positive confirmation include, for example:  \n   * an address‑verification letter,  \n   * contact‑point verification, or  \n   * delivery of documents/other deliverables to the new address.  \n\n(These steps are set out in **Excerpt 1, paragraph (ii)** of the RBI “Customer Due Diligence (CDD) Procedure – Updation / Periodic Updation of KYC” for commercial banks.)",
+        "faithfulness": 0.8,
+        "llm_context_precision_with_reference": 0.7499999999625,
+        "context_recall": 1.0
+      },
+      {
+        "question": "Can a business correspondent collect a customer's KYC self-declaration on the bank's behalf?",
+        "answer": "**Yes – for commercial banks a Business Correspondent (BC) may collect the customer’s KYC self‑declaration on the bank’s behalf.**  \n\n- The direction states that *“the bank shall obtain the self‑declaration … in the electronic mode from the customer **through the BC**, after successful biometric‑based e‑KYC authentication”*【Excerpt 1 – Chapter VI > 42, paragraph (v)]*.  \n- It further requires the BC to *“authenticate the self‑declaration and supporting documents submitted in person by the customer and promptly forward the same to the concerned bank branch. The BC shall provide the customer an acknowledgment of receipt of such declaration/submission of documents”*【Excerpt 1 – same section】.  \n\nThus, under the RBI’s KYC directions for **commercial banks**, a Business Correspondent is expressly authorised to collect (electronically or physically, where electronic mode is not yet available) the customer’s self‑declaration and forward it to the bank.  \n\n*The excerpts provided apply only to commercial banks; the RBI directions for NBFCs are not included here, so a similar allowance for NBFCs cannot be confirmed from this material.*",
+        "faithfulness": 0.5714285714285714,
+        "llm_context_precision_with_reference": 0.7499999999625,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What is the maximum balance allowed in a small account?",
+        "answer": "For **commercial banks**, a “small account” may not hold more than **₹ 50,000 at any point in time**. This limit is set out in the RBI’s Know‑Your‑Customer Directions for commercial banks (see Excerpt 1, paragraph 28, item (3)).",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": null,
+        "context_recall": null
+      },
+      {
+        "question": "How much money can be credited to a small account in a year?",
+        "answer": "For commercial banks, a “Small Account” may receive **no more than ₹ 1 lakh in total credits during a financial year**.  \n\n- This limit is set out in the RBI’s Customer‑Due‑Diligence directions for commercial banks (Chapter VI – CDD Procedure, paragraph 28) which states: “the aggregate of all credits in a financial year does not exceed Rupees One Lakh”【Excerpt 2】.  \n\nNo other document in the provided excerpts gives a different annual credit ceiling for small accounts, so the RBI directions indexed here limit the yearly credit amount to ₹1  lakh.",
+        "faithfulness": null,
+        "llm_context_precision_with_reference": null,
+        "context_recall": null
+      }
+    ],
+    "out_of_corpus_answers": [
+      {
+        "question": "What capital adequacy ratio must a small finance bank maintain?",
+        "answer": "The excerpts you provided do not contain any provision that specifies the capital‑adequacy ratio for a **small finance bank**.  \n\n- Excerpt 1 sets a 15 % CAR for NBFC‑MFIs, not for banks.  \n- Excerpts 2, 3 and 4 relate to commercial‑bank credit‑exposure limits, risk‑weight assignments, and provisioning norms, but none of them state a required CAR for small finance banks.\n\nTherefore, the RBI directions indexed here do not cover the capital‑adequacy requirement for a small finance bank."
+      },
+      {
+        "question": "What is the annual limit under the Liberalised Remittance Scheme?",
+        "answer": "The RBI directions indexed in the excerpts you provided do not contain any reference to the Liberalised Remittance Scheme (LRS) or its annual limit. Consequently, the annual limit under the LRS is not covered by the material supplied."
+      },
+      {
+        "question": "What cash reserve ratio must a commercial bank maintain?",
+        "answer": "The excerpts you have provided do not contain any provision that specifies the cash‑reserve‑ratio (CRR) that a commercial bank must maintain. None of the cited sections (the deposit‑account rules in Excerpt 1, the provisioning norms in Excerpt 3, or the take‑out‑financing guidance in Excerpt 4) address the CRR requirement.  \n\n**Therefore, the RBI directions indexed here do not cover the cash‑reserve‑ratio for commercial banks.**"
+      }
+    ]
+  }
+]

@@ -21,16 +21,40 @@ st.set_page_config(page_title="RBI Regulation Assistant", page_icon="🏦", layo
 DOC_TITLES = {
     "kyc_directions_commercial_banks_2025.pdf":
         "RBI (Commercial Banks – Know Your Customer) Directions, 2025",
+    "cb_responsible_business_conduct_2025.pdf":
+        "RBI (Commercial Banks – Responsible Business Conduct) Directions, 2025",
+    "cb_interest_rates_on_advances_2025.pdf":
+        "RBI (Commercial Banks – Interest Rates on Advances) Directions, 2025",
+    "cb_credit_debit_cards_2025.pdf":
+        "RBI (Commercial Banks – Credit Cards and Debit Cards: Issuance and Conduct) Directions, 2025",
+    "cb_credit_facilities_2025.pdf":
+        "RBI (Commercial Banks – Credit Facilities) Directions, 2025",
+    "cb_interest_rate_on_deposits_2025.pdf":
+        "RBI (Commercial Banks – Interest Rate on Deposits) Directions, 2025",
+    "cb_wilful_defaulters_2025.pdf":
+        "RBI (Commercial Banks – Treatment of Wilful Defaulters and Large Defaulters) Directions, 2025",
+    "cb_iracp_2025.pdf":
+        "RBI (Commercial Banks – Income Recognition, Asset Classification and Provisioning) Directions, 2025",
+    "cb_outsourcing_2025.pdf":
+        "RBI (Commercial Banks – Managing Risks in Outsourcing) Directions, 2025",
     "nbfc_sbr_directions_2025.pdf":
         "RBI (NBFCs – Registration, Exemptions and Scale Based Regulation) Directions, 2025",
+    "nbfc_responsible_business_conduct_2025.pdf":
+        "RBI (NBFCs – Responsible Business Conduct) Directions, 2025",
+    "nbfc_kyc_2025.pdf":
+        "RBI (NBFCs – Know Your Customer) Directions, 2025",
+    "nbfc_iracp_2025.pdf":
+        "RBI (NBFCs – Income Recognition, Asset Classification and Provisioning) Directions, 2025",
+    "nbfc_microfinance_2025.pdf":
+        "RBI (NBFCs – Microfinance Institution) Directions, 2025",
 }
 
 EXAMPLES = [
+    "What is the minimum cooling-off period on a digital loan?",
+    "When can recovery agents call a borrower?",
+    "What penalty does a bank pay for delaying a credit card closure?",
     "How often must a bank update KYC for a high-risk customer?",
-    "What is the maximum balance allowed in a small account?",
-    "Who has to approve an account for a politically exposed person?",
     "What asset size puts an NBFC in the Upper Layer?",
-    "What net owned fund does an NBFC-ICC need?",
 ]
 
 STRATEGY_LABELS = {
@@ -39,6 +63,7 @@ STRATEGY_LABELS = {
     "fixed_large": "Fixed, 800 words",
 }
 MODE_LABELS = {"hybrid": "Hybrid (BM25 + embeddings)", "dense": "Embeddings only"}
+ENTITY_OPTIONS = [None, *config.ENTITIES]  # None = search every direction
 
 
 
@@ -132,13 +157,24 @@ with st.sidebar:
                         index=config.RETRIEVAL_MODES.index(config.ACTIVE_RETRIEVAL_MODE),
                         format_func=lambda m: MODE_LABELS.get(m, m), label_visibility="collapsed")
         top_k = st.slider("Excerpts to retrieve", 2, 8, config.TOP_K)
+        entity = st.selectbox("Regulated entity", ENTITY_OPTIONS,
+                              format_func=lambda e: config.ENTITIES.get(e, "All entities"),
+                              help="Bank and NBFC directions often share wording; "
+                                   "pick one to search only its rules.")
 
     with card():
         st.markdown(label("doc", "Documents"), unsafe_allow_html=True)
-        st.markdown("".join(
-            f'<div class="doc-item">{ICONS["doc"]}<div><div class="doc-title">{html.escape(doc_title(source))}</div>'
-            f'<div class="doc-meta">{n} chunks indexed</div></div></div>'
-            for source, n in sorted(corpus(strategy).items())), unsafe_allow_html=True)
+        docs = corpus(strategy)
+        for key, name in config.ENTITIES.items():
+            group = sorted((s, n) for s, n in docs.items() if config.entity_of(s) == key)
+            if not group:
+                continue
+            with st.expander(f"{name} ({len(group)})"):
+                st.markdown("".join(
+                    f'<div class="doc-item">{ICONS["doc"]}<div><div class="doc-title">'
+                    f'{html.escape(doc_title(source))}</div>'
+                    f'<div class="doc-meta">{n} chunks indexed</div></div></div>'
+                    for source, n in group), unsafe_allow_html=True)
         st.caption("Current RBI Master Directions issued 28 Nov 2025 (as updated in 2026). "
                    "Answers come only from these documents.")
 
@@ -151,8 +187,8 @@ st.markdown(f"""
 <div class="hero">
   <div class="hero-kicker">{ICONS["bank"]}Reserve Bank of India · Master Directions</div>
   <h1><span class="rupee">₹</span>RBI Regulation Assistant</h1>
-  <p>Ask about <b>KYC rules for commercial banks</b> or the <b>NBFC scale-based regulation
-  framework</b>. Every answer is grounded in retrieved excerpts, cited by document and
+  <p>Ask about <b>KYC, lending conduct, digital lending, loan pricing, cards, deposits,
+  defaulters and provisioning</b> for commercial banks and NBFCs. Every answer is grounded in retrieved excerpts, cited by document and
   paragraph, and says so when the directions don't cover the question.</p>
   <div class="thread"></div>
   <div class="disclaimer">A portfolio project, not legal advice. Check the cited paragraph before relying on an answer.</div>
@@ -191,7 +227,8 @@ if question:
     with st.chat_message("assistant", avatar=ASSISTANT_AVATAR):
         with st.spinner("Searching the directions and drafting an answer..."):
             try:
-                result = answer(question, collection_name(strategy), k=top_k, mode=mode)
+                result = answer(question, collection_name(strategy), k=top_k, mode=mode,
+                                entity=entity)
             except Exception as e:
                 st.error(f"Couldn't generate an answer ({type(e).__name__}). "
                          "Groq's free tier may be rate-limited; try again in a minute.")

@@ -9,6 +9,10 @@ and reports, over the top-k retrieved chunks:
                     passage). This is the stricter, more honest number:
                     the right document can still be the wrong passage.
   - chunk MRR:      mean of 1/rank of the first answering chunk (0 if none).
+  - wrong entity:   share of retrieved chunks from the other entity type's
+                    directions (bank vs NBFC), which often share wording.
+The default config is also run with the entity filter set to the question's
+entity, as the UI's "Regulated entity" selector does.
 For answer quality (RAGAS faithfulness etc.), see eval/run_ragas.py.
 
 Usage:
@@ -52,7 +56,7 @@ def check_evidence(qa_set: list, collection_name: str) -> list[str]:
     return missing
 
 
-def evaluate(strategy_name: str, mode: str, qa_set: list) -> dict:
+def evaluate(strategy_name: str, mode: str, qa_set: list, entity_filter: bool = False) -> dict:
     collection_name = f"{config.COLLECTION_NAME}_{strategy_name}"
     details = []
     out_of_corpus = 0
@@ -65,7 +69,9 @@ def evaluate(strategy_name: str, mode: str, qa_set: list) -> dict:
             out_of_corpus += 1
             continue
         expected = [expected] if isinstance(expected, str) else expected
-        retrieved = retrieve(item["question"], collection_name, k=config.TOP_K, mode=mode)
+        entity = config.entity_of(expected[0])
+        retrieved = retrieve(item["question"], collection_name, k=config.TOP_K, mode=mode,
+                             entity=entity if entity_filter else None)
 
         sources = [meta["source"] for _chunk, meta, _score in retrieved]
         doc_ranks = [i + 1 for i, s in enumerate(sources) if s in expected]
@@ -77,15 +83,18 @@ def evaluate(strategy_name: str, mode: str, qa_set: list) -> dict:
             "retrieved": [f"{m['source']}::chunk{m['chunk_index']}" for _c, m, _s in retrieved],
             "doc_rank": doc_ranks[0] if doc_ranks else None,
             "chunk_rank": chunk_ranks[0] if chunk_ranks else None,
+            "wrong_entity": sum(config.entity_of(s) != entity for s in sources) / len(sources),
         })
 
     n = len(details)
     return {
         "strategy": strategy_name,
         "mode": mode,
+        "entity_filter": entity_filter,
         "doc_hit_rate": sum(d["doc_rank"] is not None for d in details) / n if n else 0,
         "chunk_hit_rate": sum(d["chunk_rank"] is not None for d in details) / n if n else 0,
         "chunk_mrr": sum(1 / d["chunk_rank"] for d in details if d["chunk_rank"]) / n if n else 0,
+        "wrong_entity": sum(d["wrong_entity"] for d in details) / n if n else 0,
         "n_questions": n,
         "n_out_of_corpus": out_of_corpus,
         "details": details,
@@ -117,16 +126,22 @@ def main():
                       f"run python src/ingest.py --strategy {strategy_name}")
                 continue
             all_results.append(result)
+    try:
+        all_results.append(evaluate(config.ACTIVE_CHUNK_STRATEGY, config.ACTIVE_RETRIEVAL_MODE,
+                                    qa_set, entity_filter=True))
+    except Exception as e:
+        print(f"entity-filtered run skipped ({e})")
 
     OUT_PATH.write_text(json.dumps(all_results, indent=2))
     print(f"Full results written to {OUT_PATH}")
 
     print("\n--- SUMMARY (paste this into your README) ---")
-    print("| Strategy | Retrieval | Doc hit rate | Chunk hit rate | Chunk MRR |")
-    print("|---|---|---|---|---|")
+    print("| Strategy | Retrieval | Doc hit rate | Chunk hit rate | Chunk MRR | Wrong-entity chunks |")
+    print("|---|---|---|---|---|---|")
     for r in all_results:
-        print(f"| {r['strategy']} | {r['mode']} | {r['doc_hit_rate']:.0%} | "
-              f"{r['chunk_hit_rate']:.0%} | {r['chunk_mrr']:.2f} |")
+        mode = r["mode"] + (" + entity filter" if r["entity_filter"] else "")
+        print(f"| {r['strategy']} | {mode} | {r['doc_hit_rate']:.0%} | "
+              f"{r['chunk_hit_rate']:.0%} | {r['chunk_mrr']:.2f} | {r['wrong_entity']:.0%} |")
     if all_results:
         print(f"\nn = {all_results[0]['n_questions']} answerable questions "
               f"(+{all_results[0]['n_out_of_corpus']} out-of-corpus, not scored here)")

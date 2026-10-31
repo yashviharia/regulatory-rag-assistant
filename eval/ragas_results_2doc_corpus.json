@@ -4,11 +4,11 @@
     "mode": "hybrid",
     "judge": "openai/gpt-oss-20b",
     "n_answerable": 28,
-    "n_fully_scored": 17,
+    "n_fully_scored": 28,
     "means": {
-      "faithfulness": 0.9069327731092437,
-      "llm_context_precision_with_reference": 0.8284313724730392,
-      "context_recall": 0.9411764705882353
+      "faithfulness": 0.9059948979591838,
+      "llm_context_precision_with_reference": 0.8124999999309523,
+      "context_recall": 0.8928571428571429
     },
     "details": [
       {
@@ -133,9 +133,79 @@
       {
         "question": "If a bank downloads KYC records from CKYCR, does it have to re-verify the customer's identity?",
         "answer": "No. A bank that downloads a customer’s KYC record from the Central KYC Records Registry (CKYCR) is **not required to re‑verify the authenticity of the customer’s identity (or address)**, **provided that the downloaded record is current and complies with the applicable PML Act/Rules**.  \n\n- This is stated in Excerpt 1 (Chapter X – Other Instructions > 65. CDD Procedure …): “any bank downloading and relying on such records from the CKYCR **shall not be required to re‑verify the authenticity of the customer’s identity and/or address**, provided the KYC records downloaded from CKYCR are current and compliant with the PML Act, 2002 / PML Rules, 2005.”【Excerpt 1】.",
-        "faithfulness": null,
-        "llm_context_precision_with_reference": null,
-        "context_recall": null
+        "faithfulness": 0.2,
+        "llm_context_precision_with_reference": 0.8333333332916666,
+        "context_recall": 1.0
+      },
+      {
+        "question": "How should banks treat customers onboarded in non-face-to-face mode from a risk perspective?",
+        "answer": "Banks must treat customers who are onboarded without a face‑to‑face meeting as **high‑risk** and apply the corresponding heightened controls.\n\n* **High‑risk categorisation & enhanced monitoring** – Excerpt 1 (Chapter VI, paragraph 44, point 6) states that “the bank shall categorise such customers as high‑risk customers and shall subject accounts opened in non‑face‑to‑face mode to enhanced monitoring until the identity of the customer is verified in face‑to‑face manner or through V‑CIP.” The same requirement is repeated in Excerpt 2 (Chapter VI, paragraph 44, point 6).  \n\n* **Risk‑based approach** – Excerpt 3 (Chapter IV, paragraph 20) explains that banks must adopt a risk‑based approach and “categorise customers into low, medium, and high‑risk categories, based on its assessment and risk perception.”  \n\nTherefore, from a risk perspective, banks should place non‑face‑to‑face onboarded customers in the **high‑risk** bucket and apply the enhanced due‑diligence measures and continuous enhanced monitoring prescribed for such accounts.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999666667,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What are the layers of the NBFC regulatory structure?",
+        "answer": "The regulatory structure for NBFCs is organized into **four layers**:\n\n1. **Base Layer (NBFC‑BL)** – the lowest layer.  \n2. **Middle Layer (NBFC‑ML)** – the intermediate layer.  \n3. **Upper Layer (NBFC‑UL)** – the higher‑risk layer that may be populated with NBFCs identified for enhanced supervision.  \n4. **Top Layer (NBFC‑TL)** – the topmost layer, which is intended to remain empty unless the Reserve Bank decides that certain Upper‑Layer NBFCs pose a substantial systemic risk and moves them up.\n\nThese four layers are described in the Directions (see Excerpt 1, paragraph 8‑9) and the description of the Top Layer is reiterated in Excerpt 2, paragraph 13‑14.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.999999999975,
+        "context_recall": 1.0
+      },
+      {
+        "question": "Which NBFC layer is expected to have no members?",
+        "answer": "The **NBFC‑Top Layer (NBFCs‑TL)** is the layer that is intended to remain empty.  \n\n- Excerpt 1 states that “The Top Layer is ideally expected to be empty and will be known as NBFCs‑Top Layer (NBFCs‑TL).”【nbfc_sbr_directions_2025.pdf, Chapter‑II – Framework for Scale Based Regulation, paragraph 8】  \n- Excerpt 3 likewise notes “The Top Layer will ideally remain empty.”【nbfc_sbr_directions_2025.pdf, Chapter‑II – Framework for Scale Based Regulation, paragraph 13】",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.8333333332916666,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What test now decides whether an NBFC is in the Upper Layer?",
+        "answer": "The determination of whether an NBFC is placed in the Upper Layer is now made through the **“supervisory filtering process.”** According to the directions, HFCs and IFCs are normally in the Middle Layer but **“may move to the Upper Layer based on the supervisory filtering process.”** (Excerpt 2, Chapter‑II – Framework for Scale Based Regulation, paragraph 8)【Excerpt 2】.  \n\n(For completeness, the Upper Layer is described as comprising those NBFCs that the Reserve Bank annually identifies as warranting enhanced regulatory requirements based on the criteria set out in paragraph 24 of the Directions – Excerpt 3, paragraph 12.)【Excerpt 3】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.0,
+        "context_recall": 0.0
+      },
+      {
+        "question": "Once classified as Upper Layer, how long must an NBFC stay under the enhanced rules?",
+        "answer": "The excerpts you provided describe how NBFCs are placed into the various layers (Base, Middle, Upper and Top) and the criteria for moving between them, but they do **not** state any specific time‑period that an NBFC must remain in the Upper Layer once it has been classified there. None of the quoted paragraphs (e.g., the definitions of the layers in Excerpts 1‑3 or the supervisory notes in Excerpt 4) mention a fixed duration for staying under the enhanced regulatory requirements applicable to the Upper Layer.  \n\n**Therefore, based on the supplied context, there is no information on how long an NBFC must remain in the Upper Layer.**",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.0,
+        "context_recall": 0.0
+      },
+      {
+        "question": "How long does a newly identified Upper Layer NBFC get to comply with the enhanced requirements?",
+        "answer": "The Directions give a two‑stage timetable for a newly‑identified Upper‑Layer (NBFC‑UL) entity:\n\n* **Implementation window:** The Board must bring the NBFC‑UL into compliance with the enhanced regulatory stipulations **within a maximum of 24 months from the date the Reserve Bank advises the NBFC of its Upper‑Layer classification**. The three‑month period that the NBFC has to prepare a board‑approved implementation plan is counted inside this 24‑month window. 【Excerpt 1, paragraph (2)】\n\n* **Minimum period of enhanced regulation:** After the classification, the NBFC‑UL is **subject to the enhanced regulatory requirements for at least five years**, even if it later fails to meet the prescribed criteria. It can only exit the enhanced framework after five consecutive years of not meeting the criteria, or earlier only on a voluntary strategic move approved by its Board (not in case of adverse financial deterioration). 【Excerpt 1, paragraph 28‑29】\n\nSo, a newly‑identified Upper‑Layer NBFC has **up to 24 months to achieve compliance**, and once compliant it will remain under the enhanced regime for **a minimum of five years**.",
+        "faithfulness": 0.75,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What is the principal business test for treating a company as an NBFC?",
+        "answer": "The RBI’s “principal‑business” test says that a company is deemed to be an NBFC only when **both** of the following conditions are met:\n\n1. **Financial assets** (net of intangible assets) constitute **more than 50 % of the company’s total assets**; and  \n2. **Income from financial assets** accounts for **more than 50 % of the company’s gross income**.  \n\nBoth thresholds must be satisfied, as set out in the Press Release 1998‑99/1269 (referenced in the Directions)【Excerpt 1 — source: nbfc_sbr_directions_2025.pdf, paragraph 38】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What net owned fund does an investment and credit company need to operate as an NBFC?",
+        "answer": "The Reserve Bank specifies that an **NBFC‑Investment and Credit Company (NBFC‑ICC)** must have a **Net Owned Fund (NOF) of ₹10 crore** in order to commence or continue its business as an NBFC【Excerpt 1 — source: nbfc_sbr_directions_2025.pdf, paragraph B (Net Owned Fund Requirement)】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "What is the minimum net owned fund for an infrastructure finance company?",
+        "answer": "The minimum Net Owned Fund (NOF) that an **Infrastructure Finance Company (NBFC‑IFC)** must maintain is **₹ 300 crore**【Excerpt 1 — source: nbfc_sbr_directions_2025.pdf, paragraph 41】.",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
+      },
+      {
+        "question": "How often is the asset-size threshold for the Upper Layer reviewed?",
+        "answer": "The asset‑size threshold that determines which NBFCs are placed in the Upper Layer is **reviewed every three years** 【Excerpt 1 — paragraph 31】. (The broader criteria for identifying Upper‑Layer NBFCs are reviewed “periodically,” but the specific threshold is set to be revisited on a three‑year cycle.)",
+        "faithfulness": 1.0,
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0
       }
     ],
     "out_of_corpus_answers": [

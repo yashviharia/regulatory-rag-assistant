@@ -9,7 +9,7 @@ Docs:   http://localhost:8000/docs
 import os
 import sys
 from pathlib import Path
-from typing import Literal
+from typing import Literal, Optional
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -32,6 +32,7 @@ app.add_middleware(
 
 Strategy = Literal[tuple(config.CHUNK_STRATEGIES)]
 Mode = Literal[tuple(config.RETRIEVAL_MODES)]
+Entity = Literal[tuple(config.ENTITIES)]
 
 
 class Question(BaseModel):
@@ -39,12 +40,14 @@ class Question(BaseModel):
     strategy: Strategy = config.ACTIVE_CHUNK_STRATEGY
     mode: Mode = config.ACTIVE_RETRIEVAL_MODE
     top_k: int = Field(default=config.TOP_K, ge=1, le=10)
+    entity: Optional[Entity] = None  # None searches every direction
 
 
 class SourceChunk(BaseModel):
     source: str
     chunk_index: int
     section: str
+    entity: str
     score: float
     snippet: str
     text: str
@@ -83,7 +86,8 @@ def sources(strategy: Strategy = config.ACTIVE_CHUNK_STRATEGY):
     for meta in metadatas:
         counts[meta["source"]] = counts.get(meta["source"], 0) + 1
     return {"strategy": strategy,
-            "documents": [{"source": s, "chunks": n} for s, n in sorted(counts.items())]}
+            "documents": [{"source": s, "entity": config.entity_of(s), "chunks": n}
+                          for s, n in sorted(counts.items())]}
 
 
 @app.post("/ask", response_model=AnswerResponse)
@@ -91,7 +95,7 @@ def ask(payload: Question):
     open_collection(payload.strategy)
     try:
         result = answer(payload.question, collection_name(payload.strategy),
-                        k=payload.top_k, mode=payload.mode)
+                        k=payload.top_k, mode=payload.mode, entity=payload.entity)
     except Exception as e:
         # retrieval is local, so a failure here is almost always the Groq call
         raise HTTPException(502, f"Answer generation failed: {type(e).__name__}: {e}")
@@ -100,6 +104,7 @@ def ask(payload: Question):
             source=meta["source"],
             chunk_index=meta["chunk_index"],
             section=meta.get("section", ""),
+            entity=meta.get("entity") or config.entity_of(meta["source"]),
             score=score,
             snippet=chunk[:200],
             text=chunk,

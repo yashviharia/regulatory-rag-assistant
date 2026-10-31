@@ -43,9 +43,10 @@ section-aware splitter that breaks on RBI paragraph numbers and prefixes every
 chunk with its chapter and heading), each with dense-only and hybrid
 (BM25 + embeddings, reciprocal rank fusion) retrieval.
 
-On the old, messier corpus, section-aware chunking lost. On the new one,
-which has consistent chapter / lettered-section / numbered-paragraph
-structure, it won clearly:
+On the old, messier corpus, section-aware chunking lost. On the current
+directions, which have consistent chapter / lettered-section /
+numbered-paragraph structure, it won clearly (these are the 28 questions on the
+two-direction corpus; section 4 has the 14-direction numbers):
 
 | Strategy | Retrieval | Chunk hit rate (top 4) | Chunk MRR |
 |---|---|---|---|
@@ -63,13 +64,43 @@ keyword search catches and small embedding models blur.
 
 On answer quality (RAGAS, answers by `gpt-oss-120b`, judged by a different
 model, `gpt-oss-20b`), the default configuration scored 0.91 faithfulness,
-0.83 context precision and 0.94 context recall on the 17 questions the free
-tier's daily token cap allowed. The assistant also declined all three
-questions whose answers aren't in the documents instead of guessing.
+0.81 context precision and 0.89 context recall on all 28 questions. The
+assistant also declined all three questions whose answers weren't in the
+documents instead of guessing.
 
 The free tier shaped the tooling too: one RAGAS run doesn't fit in a day's
 tokens, so the eval caches answers, saves each question's scores as they
 arrive, and resumes where it stopped.
+
+## 4. Two documents was a toy; fourteen was a test
+
+With only the two directions I started from, "did the right document come
+back" was 100% by default, and most questions a visitor would ask (loans,
+cards, recovery agents, digital lending) got "not covered". So I grew the
+corpus to 14 Master Directions, about 830 pages: nine for commercial banks and
+five for NBFCs.
+
+Two things happened. On the original 28 questions the default setup kept its
+82% hit rate but its MRR fell from 0.78 to 0.69: the right passage still made
+the top 4, just behind look-alikes from other directions. And the corpus now
+had near-duplicates. The bank and NBFC KYC directions both say high-risk
+customers' KYC must be refreshed "at least once in every two years". Without
+help, one in six retrieved chunks came from the wrong entity's directions.
+
+The fix was boring and effective: tag every chunk with the entity it applies
+to, let retrieval filter on it, and tell the model which entity each excerpt
+covers. On 50 questions across all 14 directions:
+
+| Setup | Chunk hit rate | MRR | Wrong-entity chunks |
+|---|---|---|---|
+| section + hybrid | 82% | 0.68 | 16% |
+| section + hybrid + entity filter | 84% | 0.72 | 0% |
+
+Growing the corpus also broke my eval in a useful way: two of my three
+"out-of-corpus" questions (the digital lending cooling-off period and the DLG
+cap) were now answerable, because digital lending moved into the banks'
+Credit Facilities direction. Out-of-corpus tests need re-checking every time
+the corpus changes.
 
 ## What I'd do next
 

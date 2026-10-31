@@ -193,7 +193,8 @@ def ingest(strategy_name: str, docs: list[dict], model: SentenceTransformer,
             all_chunks.append(chunk["text"])
             all_ids.append(f"{doc['source']}::chunk{i}")
             all_metadatas.append({"source": doc["source"], "chunk_index": i,
-                                  "section": chunk["section"]})
+                                  "section": chunk["section"],
+                                  "entity": config.entity_of(doc["source"])})
     print(f"Produced {len(all_chunks)} chunks total.")
 
     print("Embedding chunks ...")

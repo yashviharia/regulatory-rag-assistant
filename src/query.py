@@ -30,9 +30,12 @@ except ImportError:
 
 SYSTEM_PROMPT = """You are a compliance assistant that answers questions \
 about regulatory circulars using ONLY the provided context excerpts. \
-If the answer isn't in the context, say so plainly instead of guessing. \
+If the answer isn't in the context, say plainly that the RBI directions \
+indexed here don't cover it, instead of guessing. \
 Cite which source document (and paragraph number, when the excerpt shows \
-one) each part of your answer comes from."""
+one) each part of your answer comes from. Each excerpt says which type of \
+entity it applies to (commercial banks or NBFCs); rules for one don't \
+automatically apply to the other, so say which one your answer covers."""
 
 # Reciprocal rank fusion constant; 60 is the value from the original RRF paper
 RRF_K = 60
@@ -76,9 +79,11 @@ def get_bm25_index(collection_name: str):
     return BM25Okapi([tokenize(d) for d in data["documents"]]), data
 
 
-def dense_search(question: str, collection_name: str, n: int) -> list:
+def dense_search(question: str, collection_name: str, n: int, entity: str = None) -> list:
     query_embedding = get_embedding_model().encode([question]).tolist()
-    results = get_collection(collection_name).query(query_embeddings=query_embedding, n_results=n)
+    results = get_collection(collection_name).query(
+        query_embeddings=query_embedding, n_results=n,
+        where={"entity": entity} if entity else None)
     # MiniLM embeddings are unit length, so Chroma's squared L2 distance
     # d = 2 - 2*cos; report cosine similarity so higher always means better
     return [(chunk, meta, 1 - dist / 2) for chunk, meta, dist in
@@ -86,20 +91,25 @@ def dense_search(question: str, collection_name: str, n: int) -> list:
 
 
 def retrieve(question: str, collection_name: str, k: int = config.TOP_K,
-             mode: str = config.ACTIVE_RETRIEVAL_MODE) -> list:
+             mode: str = config.ACTIVE_RETRIEVAL_MODE, entity: str = None) -> list:
     """Returns the top-k (chunk, metadata, score) tuples, best first.
-    score is cosine similarity in dense mode and the RRF score in hybrid mode."""
+    score is cosine similarity in dense mode and the RRF score in hybrid mode.
+    entity ("bank" / "nbfc") limits the search to that entity's directions."""
+    if entity is not None and entity not in config.ENTITIES:
+        raise ValueError(f"unknown entity {entity!r}; expected one of {list(config.ENTITIES)}")
     if mode == "dense":
-        return dense_search(question, collection_name, k)
+        return dense_search(question, collection_name, k, entity)
     if mode != "hybrid":
         raise ValueError(f"unknown retrieval mode {mode!r}; expected one of {config.RETRIEVAL_MODES}")
 
     # fuse the two rankings over a wider candidate pool, then cut to k
     pool = max(k * 5, 20)
-    dense = dense_search(question, collection_name, pool)
+    dense = dense_search(question, collection_name, pool, entity)
     bm25, data = get_bm25_index(collection_name)
     bm25_scores = bm25.get_scores(tokenize(question))
-    bm25_top = sorted(range(len(bm25_scores)), key=lambda i: -bm25_scores[i])[:pool]
+    candidates = [i for i in range(len(bm25_scores))
+                  if entity is None or data["metadatas"][i].get("entity") == entity]
+    bm25_top = sorted(candidates, key=lambda i: -bm25_scores[i])[:pool]
 
     fused, items = {}, {}
     for rank, (chunk, meta, _score) in enumerate(dense):
@@ -121,14 +131,15 @@ def retrieve(question: str, collection_name: str, k: int = config.TOP_K,
 def build_context(retrieved: list) -> str:
     parts = []
     for i, (chunk, meta, _score) in enumerate(retrieved):
-        parts.append(f"[Excerpt {i+1} — source: {meta['source']}]\n{chunk}")
+        applies_to = config.ENTITIES[meta.get("entity") or config.entity_of(meta["source"])]
+        parts.append(f"[Excerpt {i+1} — source: {meta['source']} — applies to: {applies_to}]\n{chunk}")
     return "\n\n".join(parts)
 
 
 def answer(question: str, collection_name: str = None, k: int = config.TOP_K,
-           mode: str = config.ACTIVE_RETRIEVAL_MODE) -> dict:
+           mode: str = config.ACTIVE_RETRIEVAL_MODE, entity: str = None) -> dict:
     collection_name = collection_name or f"{config.COLLECTION_NAME}_{config.ACTIVE_CHUNK_STRATEGY}"
-    retrieved = retrieve(question, collection_name, k=k, mode=mode)
+    retrieved = retrieve(question, collection_name, k=k, mode=mode, entity=entity)
     context = build_context(retrieved)
 
     client = get_groq_client()

@@ -29,6 +29,16 @@ ACTIVE_RETRIEVAL_MODE = "hybrid"  # beat dense on chunk MRR for every strategy (
 
 COLLECTION_NAME = "regulatory_circulars"
 
+# Since the Nov 2025 consolidation the RBI issues a separate direction per type
+# of regulated entity, and bank and NBFC versions often share wording (both have
+# KYC, IRACP and conduct directions). Each chunk is tagged so retrieval can be
+# limited to one entity type.
+ENTITIES = {"bank": "Commercial banks", "nbfc": "NBFCs"}
+
+
+def entity_of(source: str) -> str:
+    return "nbfc" if source.lower().startswith("nbfc") else "bank"
+
 GROQ_MODEL = "openai/gpt-oss-120b"  # llama-3.3-70b-versatile was retired; see console.groq.com/docs/models
 # eval/run_ragas.py judge: a different model from GROQ_MODEL so the model doesn't
 # grade itself. qwen/qwen3.8-27b (a different family) is the better choice but

@@ -7,8 +7,8 @@
   - [x] 28 answerable + 3 out-of-corpus questions with verbatim evidence quotes
   - [x] chunk-level retrieval eval: 3 chunking strategies x dense/hybrid retrieval
   - [x] section-aware chunking + hybrid BM25 retrieval (now the defaults)
-  - [x] RAGAS on the default config, judged by a different model: 17 of 28 scored
-  - [ ] score the other 11: re-run `python eval/run_ragas.py` once Groq's daily cap resets (it resumes)
+  - [x] RAGAS on the default config, judged by a different model
+  - [x] all 28 scored on the 2-direction corpus (0.91 / 0.81 / 0.89)
 - [x] Week 4: FastAPI + Streamlit UI; deploy
   - [x] API: strategy/mode/top_k params, scores + sections in sources, /sources, CORS, 422/502/503 errors
   - [x] Streamlit UI: chat history, example questions, source cards, settings, auto index build
@@ -21,4 +21,5 @@
 - [ ] cross-encoder reranker over the top 20 (remaining misses are paraphrase gaps)
 - [ ] per-chunk document status (issued / withdrawn) and a warning when an answer relies on a superseded rule
 - [ ] RAGAS for the non-default strategies (Groq's daily token cap allows about one per day)
-- [ ] more Master Directions (digital lending lives in the new entity-specific directions)
+- [x] more Master Directions: 14 now (9 bank, 5 NBFC), with a bank/NBFC entity filter
+- [ ] RAGAS on the 14-direction corpus and all 50 questions (about 3 days of Groq's judge quota)

@@ -31,7 +31,7 @@ sdk_version: 1.41.1
 python_version: "3.12"
 app_file: frontend/app.py
 pinned: false
-short_description: RAG over current RBI KYC and NBFC Master Directions
+short_description: RAG over 14 RBI Master Directions for banks and NBFCs
 ---
 
 """

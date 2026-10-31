@@ -28,8 +28,32 @@ SOURCES = [
      "kyc_directions_commercial_banks_2025"),
     ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/339MD7166A79E96D64572B378949D3972DBD1.PDF",
      "nbfc_sbr_directions_2025"),
-    # Add more (link, slug) pairs as you expand the corpus; the RBI lists the
-    # Master Directions per type of regulated entity on its website.
+    # Commercial banks
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/170MD.PDF",
+     "cb_responsible_business_conduct_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/161MD.PDF",
+     "cb_interest_rates_on_advances_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/155MD.PDF",
+     "cb_credit_debit_cards_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/154MD.PDF",
+     "cb_credit_facilities_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/153MD.PDF",
+     "cb_interest_rate_on_deposits_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/166MD.PDF",
+     "cb_wilful_defaulters_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/164MD.PDF",
+     "cb_iracp_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/171MD.PDF",
+     "cb_outsourcing_2025"),
+    # NBFCs
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/362MD26CA543937BA439A97E1BCFC08CF5808.PDF",
+     "nbfc_responsible_business_conduct_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/361MD1E2F8EA063454AD5AFA1D02A1BA5ACA7.PDF",
+     "nbfc_kyc_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/356MD4F8109CA54BE44A9805C5300601F8A11.PDF",
+     "nbfc_iracp_2025"),
+    ("https://rbidocs.rbi.org.in/rdocs/notification/PDFs/371MD93444E1CFB2749C6A9F8F0182794522B.PDF",
+     "nbfc_microfinance_2025"),
 ]
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; student-research-project)"}

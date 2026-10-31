@@ -224,24 +224,200 @@
     "reference_answer": "Every three years (para 31)."
   },
   {
-    "question": "What is the minimum cooling-off period a borrower gets on a digital loan?",
-    "expected_source": null,
-    "evidence": [],
-    "reference_answer": "At least one day under the Digital Lending Directions, which aren't in the current corpus.",
-    "note": "Out of corpus: checks the assistant says it can't find the answer."
+    "question": "What is the minimum cooling-off period a borrower gets on a digital loan from a bank?",
+    "expected_source": "cb_credit_facilities_2025.pdf",
+    "evidence": [
+      "subject to the period so determined not being less than one day"
+    ],
+    "reference_answer": "The bank sets it in its credit policy, but it can't be less than one day; during it the borrower can exit by paying the principal and proportionate APR without penalty (para 11)."
   },
   {
-    "question": "What is the maximum size of a default loss guarantee relative to the loan pool it covers?",
-    "expected_source": null,
-    "evidence": [],
-    "reference_answer": "Five per cent under the Digital Lending Directions, which aren't in the current corpus.",
-    "note": "Out of corpus: checks the assistant says it can't find the answer."
+    "question": "What is the maximum default loss guarantee cover a bank can accept on a digital lending portfolio?",
+    "expected_source": "cb_credit_facilities_2025.pdf",
+    "evidence": [
+      "shall not exceed five per cent of the total amount disbursed out of that loan portfolio"
+    ],
+    "reference_answer": "Total DLG cover can't exceed five per cent of the amount disbursed out of that loan portfolio (para 24(1))."
+  },
+  {
+    "question": "Who is allowed to provide a default loss guarantee to a bank?",
+    "expected_source": "cb_credit_facilities_2025.pdf",
+    "evidence": [
+      "A bank may enter into DLG arrangements only with a LSP / other lender engaged as an LSP"
+    ],
+    "reference_answer": "Only a lending service provider (or another lender engaged as an LSP), incorporated as a company under the Companies Act, 2013 (para 19)."
+  },
+  {
+    "question": "Between what hours are recovery agents barred from calling borrowers?",
+    "expected_source": "cb_responsible_business_conduct_2025.pdf",
+    "evidence": [
+      "calling the borrower before 8:00 a.m. and after 7:00 p.m. for recovery of overdue loans"
+    ],
+    "reference_answer": "They must not call before 8:00 a.m. or after 7:00 p.m. to recover overdue loans."
+  },
+  {
+    "question": "How much notice must a bank give customers before changing service charges?",
+    "expected_source": "cb_responsible_business_conduct_2025.pdf",
+    "evidence": [
+      "effected only with prior notification to customers of at least 30 days"
+    ],
+    "reference_answer": "At least 30 days' prior notice, and the customer can exit without cost within those 30 days."
+  },
+  {
+    "question": "What compensation does a bank owe if it delays returning property documents after a loan is repaid?",
+    "expected_source": "cb_responsible_business_conduct_2025.pdf",
+    "evidence": [
+      "it shall compensate the borrower at the rate of 5,000 for each day of delay"
+    ],
+    "reference_answer": "₹5,000 per day of delay beyond 30 days after full repayment, where the delay is attributable to the bank (para 358)."
+  },
+  {
+    "question": "Within how many days must an NBFC return original property documents after a loan is fully repaid?",
+    "expected_source": "nbfc_responsible_business_conduct_2025.pdf",
+    "evidence": [
+      "and remove charges registered with any registry within a period of 30 days after"
+    ],
+    "reference_answer": "Within 30 days of full repayment / settlement, including removing charges registered with any registry (para 35)."
+  },
+  {
+    "question": "How quickly must a card issuer close a credit card when the cardholder asks?",
+    "expected_source": "cb_credit_debit_cards_2025.pdf",
+    "evidence": [
+      "Any request for closure of a credit card shall be honoured within seven working days"
+    ],
+    "reference_answer": "Within seven working days, subject to payment of all dues (para 19)."
+  },
+  {
+    "question": "What penalty does a card issuer pay for delaying a credit card closure?",
+    "expected_source": "cb_credit_debit_cards_2025.pdf",
+    "evidence": [
+      "shall result in a penalty of 500 per calendar day of"
+    ],
+    "reference_answer": "₹500 per calendar day of delay beyond seven working days, payable to the cardholder, provided nothing is outstanding."
+  },
+  {
+    "question": "What happens if a newly issued credit card isn't activated within 30 days?",
+    "expected_source": "cb_credit_debit_cards_2025.pdf",
+    "evidence": [
+      "for activating a credit card, if the same has not been activated by the customer for more than 30 days"
+    ],
+    "reference_answer": "The issuer must seek OTP-based consent to activate it; without consent it closes the account at no cost within seven working days."
+  },
+  {
+    "question": "What counts as an unsolicited credit card?",
+    "expected_source": "cb_credit_debit_cards_2025.pdf",
+    "evidence": [
+      "Unsolicited Credit Card is a credit card issued without a specific written / digital request"
+    ],
+    "reference_answer": "A card issued without a specific written or digital request or application; renewals and replacements don't count."
+  },
+  {
+    "question": "Which external benchmarks can banks use to price floating rate loans?",
+    "expected_source": "cb_interest_rates_on_advances_2025.pdf",
+    "evidence": [
+      "Reserve Bank of India policy Repo Rate"
+    ],
+    "reference_answer": "The RBI policy repo rate, the 3- and 6-month Treasury bill yields published by FBIL, or another FBIL benchmark (para 3(4))."
+  },
+  {
+    "question": "How often can a bank change the non-credit-risk spread components on an external benchmark loan?",
+    "expected_source": "cb_interest_rates_on_advances_2025.pdf",
+    "evidence": [
+      "other components of spread including operating cost could be altered once in three years"
+    ],
+    "reference_answer": "Once in three years; the credit risk premium changes only on a substantial change in credit assessment."
+  },
+  {
+    "question": "What is the minimum tenor of an NRO term deposit?",
+    "expected_source": "cb_interest_rate_on_deposits_2025.pdf",
+    "evidence": [
+      "that of NRO term deposits shall be seven days"
+    ],
+    "reference_answer": "Seven days (NRE term deposits: one year)."
+  },
+  {
+    "question": "Can a bank offer higher senior citizen deposit rates on an HUF's term deposit?",
+    "expected_source": "cb_interest_rate_on_deposits_2025.pdf",
+    "evidence": [
+      "this facility is not offered on the term deposit standing in the name of an HUF"
+    ],
+    "reference_answer": "No: not on deposits in the name of an HUF or its Karta, even if the Karta is a resident senior citizen (para 13)."
+  },
+  {
+    "question": "Above what outstanding amount does a borrower who commits wilful default become a wilful defaulter?",
+    "expected_source": "cb_wilful_defaulters_2025.pdf",
+    "evidence": [
+      "the outstanding amount is 25 lakh and above"
+    ],
+    "reference_answer": "₹25 lakh and above, or as notified by the RBI."
+  },
+  {
+    "question": "Within what time must a bank complete declaring a borrower a wilful defaulter after the account turns NPA?",
+    "expected_source": "cb_wilful_defaulters_2025.pdf",
+    "evidence": [
+      "within six months of the account being classified as NPA"
+    ],
+    "reference_answer": "Within six months of the account being classified as NPA (para 6(2))."
+  },
+  {
+    "question": "When is a cash credit account treated as out of order?",
+    "expected_source": "cb_iracp_2025.pdf",
+    "evidence": [
+      "the outstanding balance remains continuously in excess of the sanctioned limit / drawing power for 90 days"
+    ],
+    "reference_answer": "When the balance stays above the limit/drawing power for 90 days, or there are no credits for 90 days, or credits don't cover interest."
+  },
+  {
+    "question": "When does a substandard asset become a doubtful asset for a bank?",
+    "expected_source": "cb_iracp_2025.pdf",
+    "evidence": [
+      "an asset which has remained in the substandard category for a period of twelve months"
+    ],
+    "reference_answer": "After it has stayed substandard for twelve months."
+  },
+  {
+    "question": "Which functions can a bank never outsource?",
+    "expected_source": "cb_outsourcing_2025.pdf",
+    "evidence": [
+      "not outsource core management functions including Internal Audit, compliance function"
+    ],
+    "reference_answer": "Core management functions: internal audit, compliance, and decisions like KYC compliance for deposit accounts, loan sanction and investment portfolio management (para 15)."
+  },
+  {
+    "question": "How often must an NBFC update KYC for a high-risk customer?",
+    "expected_source": "nbfc_kyc_2025.pdf",
+    "evidence": [
+      "the NBFC shall carry out periodic updation at least once in every two years for high-risk customers"
+    ],
+    "reference_answer": "At least once every two years (eight for medium risk, ten for low risk)."
+  },
+  {
+    "question": "What capital adequacy ratio must an NBFC-MFI maintain?",
+    "expected_source": "nbfc_microfinance_2025.pdf",
+    "evidence": [
+      "shall not be less than 15 per cent of its aggregate risk weighted assets"
+    ],
+    "reference_answer": "At least 15 per cent of risk weighted assets, with Tier 2 capped at 100 per cent of Tier 1 (para 16)."
   },
   {
     "question": "What capital adequacy ratio must a small finance bank maintain?",
     "expected_source": null,
     "evidence": [],
-    "reference_answer": "Not covered: neither document regulates small finance banks' capital.",
+    "reference_answer": "Not covered: no direction in the corpus sets small finance banks' capital requirement.",
+    "note": "Out of corpus: checks the assistant says it can't find the answer."
+  },
+  {
+    "question": "What is the annual limit under the Liberalised Remittance Scheme?",
+    "expected_source": null,
+    "evidence": [],
+    "reference_answer": "Not covered: foreign exchange directions aren't in the corpus.",
+    "note": "Out of corpus: checks the assistant says it can't find the answer."
+  },
+  {
+    "question": "What cash reserve ratio must a commercial bank maintain?",
+    "expected_source": null,
+    "evidence": [],
+    "reference_answer": "Not covered: the CRR and SLR direction isn't in the corpus.",
     "note": "Out of corpus: checks the assistant says it can't find the answer."
   }
 ]

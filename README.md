@@ -155,9 +155,12 @@ questions with evidence quotes to `eval/qa_set.json`; `run_eval.py` warns about
 any quote it can't find in the corpus.
 
 ## Deploy
-- **Hugging Face Spaces** (used for the demo): `huggingface-cli login`, then
-  `python scripts/deploy_hf_space.py`. It uploads the code and PDFs, stores
-  `GROQ_API_KEY` as a Space secret, and the app builds its index on first start.
+- **Streamlit Community Cloud** (used for the demo, free): New app → this repo,
+  branch `main`, main file `frontend/app.py`, Python 3.12, and `GROQ_API_KEY`
+  under Advanced settings → Secrets. The app builds its index on first start.
+- **Docker:** `docker build -t rbi-rag . && docker run -p 7860:7860 -e GROQ_API_KEY=... rbi-rag`
+  (the index is built into the image). `scripts/deploy_hf_space.py` pushes the
+  same image to a Hugging Face Docker Space, which now needs a PRO account.
 - **Render:** `render.yaml` builds the index during the build and serves the API.
 
 ## Stack

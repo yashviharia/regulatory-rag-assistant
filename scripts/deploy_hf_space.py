@@ -1,8 +1,9 @@
 """
 Deploys the Streamlit app to a Hugging Face Space.
 
-The Space builds the ChromaDB index on first start (frontend/app.py), so
-only code and the source PDFs are uploaded. GROQ_API_KEY from .env is
+Spaces dropped the Streamlit SDK, so this is a Docker Space (see Dockerfile),
+which builds the ChromaDB index into the image. Only code, the Dockerfile and
+the source PDFs are uploaded. GROQ_API_KEY from .env is
 stored as a Space secret, never as a file.
 
 One-time setup:  venv/bin/huggingface-cli login   (token with write access)
@@ -26,17 +27,16 @@ title: RBI Regulation Assistant
 emoji: 🏦
 colorFrom: blue
 colorTo: indigo
-sdk: streamlit
-sdk_version: 1.41.1
-python_version: "3.12"
-app_file: frontend/app.py
+sdk: docker
+app_port: 7860
 pinned: false
 short_description: RAG over 14 RBI Master Directions for banks and NBFCs
 ---
 
 """
 
-UPLOAD_PATTERNS = ["src/*.py", "frontend/*.py", ".streamlit/config.toml", "data/raw/*.pdf", "requirements.txt"]
+UPLOAD_PATTERNS = ["src/*.py", "frontend/*.py", ".streamlit/config.toml", "data/raw/*.pdf",
+                   "requirements.txt", "Dockerfile", ".dockerignore"]
 
 
 def main():
@@ -59,7 +59,7 @@ def main():
         sys.exit("Not logged in to Hugging Face. Run: venv/bin/huggingface-cli login")
     space = args.space or f"{user}/rbi-regulation-assistant"
 
-    api.create_repo(space, repo_type="space", space_sdk="streamlit", exist_ok=True)
+    api.create_repo(space, repo_type="space", space_sdk="docker", exist_ok=True)
     groq_key = os.environ.get("GROQ_API_KEY", "")
     if groq_key and groq_key != "your_key_here":
         api.add_space_secret(space, "GROQ_API_KEY", groq_key)

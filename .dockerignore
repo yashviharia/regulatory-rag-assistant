@@ -1,0 +1,9 @@
+venv
+.env
+data/chroma_db
+data/withdrawn
+data/processed
+eval/ragas_cache
+notebooks
+docs
+.git

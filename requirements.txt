@@ -14,3 +14,9 @@ requests==2.32.3
 # chromadb 0.5.x telemetry breaks with posthog>=6 ("capture() takes 1 positional argument")
 posthog==5.4.0
 rank-bm25==0.2.2
+# sentence-transformers 3.3.1 breaks with newer transformers / huggingface_hub;
+# pinned to the versions the app is tested with so cloud installs match
+transformers==4.46.3
+tokenizers==0.20.3
+huggingface_hub==0.36.2
+numpy==2.5.4
